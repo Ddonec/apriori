@@ -1,3 +1,7 @@
+* {
+   box-sizing: border-box;
+}
+
 body {
    background: #f8f3ed;
 }
@@ -101,4 +105,104 @@ h1 {
    color: #1d1d1d;
 
    margin-left: 32px;
+   margin-bottom: 48px;
+}
+.bg-block-correct-position {
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 32px;
+   height: 504px;
+   padding: 32px;
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+}
+
+.catalog-home-block-1 {
+   background-image: url(../assets/content/Rectangle\ 1854.png);
+   width: calc(100% / 3 * 2 - 12px);
+}
+.catalog-home-block-2 {
+   background-image: url(../assets/content/Rectangle\ 1525.png);
+   width: calc(100% / 3 - 12px);
+}
+.catalog-home-block-3 {
+   background-image: url(../assets/content/Rectangle\ 1860.png);
+   width: calc(100% / 3 - 16px);
+}
+.catalog-home-block-4 {
+   background-image: url(../assets/content/Rectangle\ 1855.png);
+   width: calc(100% / 3 - 16px);
+}
+.catalog-home-block-5 {
+   background-image: url(../assets/content/Rectangle\ 1531.png);
+   height: calc(50% - 12px);
+   width: 100%;
+}
+.catalog-home-block-6 {
+   background-image: url(../assets/content/Rectangle\ 1562.png);
+   height: calc(50% - 12px);
+   width: calc(100% - 264px);
+}
+
+.flex-in-catalog-block {
+   display: flex;
+   gap: 22px;
+}
+
+.name-of-thing-home {
+   font-family: "TT Ramillas Trl", sans-serif;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   color: #fff;
+
+   white-space: nowrap;
+}
+.type-of-thing-home {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.24;
+   color: #fff;
+
+   margin-bottom: 16px;
+}
+.line-into-block {
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.catalog-home-blocks {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 24px;
+   position: relative;
+}
+
+.last-block-in-catalog-goods-home {
+   width: calc(100% / 3 - 16px);
+   display: flex;
+   flex-wrap: wrap;
+   gap: 24px;
+}
+.red-circle {
+   background: rgb(255, 81, 81);
+   aspect-ratio: 1;
+   height: calc(50% - 12px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+
+   font-family: "TT Ramillas Trl", sans-serif;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   color: #fff;
 }
