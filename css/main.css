@@ -22,7 +22,7 @@ body {
 }
 .home-header {
    padding: 32px 56px 48px;
-   aspect-ratio: 2;
+   height: 960px;
    background-image: url(../assets/content/Banner_960\ 1.png);
    background-position: center;
    background-size: cover;
@@ -52,6 +52,7 @@ h1 {
    line-height: 1;
    letter-spacing: 0.02em;
    color: #fff;
+   margin-top: auto;
 }
 
 .subtitle-home {
@@ -85,6 +86,7 @@ h1 {
    border-radius: 16px;
    background-image: url(../assets/content/Rectangle\ 1537.png);
    background-size: cover;
+   height: 160px;
 }
 .play-btn-home-preview {
    position: absolute;
@@ -500,6 +502,8 @@ h1 {
 .reviews-container {
    display: flex;
    gap: 24px;
+}
+.reviews-overflow-container {
    width: 75%;
 }
 
@@ -660,10 +664,15 @@ h1 {
    margin-top: 20px;
 }
 
+.viewed-products-overflow-container {
+   width: 100%;
+   overflow-x: scroll;
+}
 .viewed-products-container {
    display: flex;
    gap: 24px;
    margin: 0 56px;
+   width: max-content;
 }
 
 .viewed-product {
@@ -738,10 +747,10 @@ h1 {
 footer {
    display: flex;
    width: 100%;
-   aspect-ratio: 192/108;
    border-radius: 24px;
    overflow: hidden;
    margin-top: 96px;
+   height: 1080px;
 }
 .footer_left-side {
    width: 50%;
