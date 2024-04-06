@@ -634,13 +634,78 @@ footer {
    display: flex;
    width: 100%;
    aspect-ratio: 192/108;
+   border-radius: 24px;
+   overflow: hidden;
+   margin-top: 96px;
 }
 .footer_left-side {
    width: 50%;
    background-image: url(../assets/content/footer-bg.png);
+   background-size: cover;
+
+   padding: 56px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 }
 .footer_rignt-side {
    width: 50%;
+   background: #6c6050;
+   padding: 56px 32px;
+   display: flex;
+   flex-wrap: wrap;
+}
+.footer_bold-text {
+   font-family: "Scotch Modern Display", sans-serif;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 1.33333;
+   letter-spacing: 0em;
+   color: #fff;
+}
+.footer_discription {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 1.33333;
+   color: rgba(255, 255, 255, 0.48);
+}
+.footer-title {
+   font-family: "TT Ramillas Trl", sans-serif;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 1;
+   color: #fff;
+   margin-bottom: 48px;
+}
+.footer-u-list > li > a {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.24;
+   color: #fff;
+   text-decoration: none;
+}
+.footer-u-list > li {
+   margin-top: 16px;
+}
+.footer_rignt__ul-box {
+   width: 50%;
+}
+.footer-social-webs,
+.footer-payment {
+   display: flex;
+   gap: 32px;
+   margin-top: auto;
+   width: 50%;
+}
+.footer-u-list .footer-tel > a {
+   font-family: "TT Ramillas Trl", sans-serif;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 1;
+   color: #fff;
 }
 /*  */
 
