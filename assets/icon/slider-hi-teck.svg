@@ -1,0 +1,12 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="48" cy="48" r="47.5" stroke="white" stroke-opacity="0.48"/>
+<circle cx="66" cy="48.5" r="3.5" stroke="white"/>
+<circle cx="36" cy="38.5" r="3.5" stroke="white"/>
+<circle cx="30" cy="53.5" r="3.5" stroke="white"/>
+<path d="M26 46.5H43.5C45.7091 46.5 47.5 48.2909 47.5 50.5V70" stroke="white"/>
+<path d="M39.5 38.5H48.5C50.7091 38.5 52.5 40.2909 52.5 42.5V70" stroke="white"/>
+<path d="M33.5 53.5H38.5C40.7091 53.5 42.5 55.2909 42.5 57.5V70" stroke="white"/>
+<path d="M62.5 48.5H60.5C58.2909 48.5 56.5 50.2909 56.5 52.5V70" stroke="white"/>
+<circle cx="4" cy="4" r="3.5" transform="matrix(1 0 0 -1 62 39.5)" stroke="white"/>
+<path d="M62.5 35.5H60.5C58.2909 35.5 56.5 33.7091 56.5 31.5V26" stroke="white"/>
+</svg>

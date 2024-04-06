@@ -1,0 +1,16 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="48" cy="48" r="47.5" stroke="white" stroke-opacity="0.48"/>
+<path d="M25 54.5L71 54.5" stroke="white"/>
+<path d="M32.5 26V70M39.5 26V70" stroke="white"/>
+<path d="M56.5 26V70M63.5 26V70" stroke="white"/>
+<rect x="32.25" y="33.25" width="7.5" height="0.5" stroke="white" stroke-width="0.5"/>
+<rect x="56.25" y="33.25" width="7.5" height="0.5" stroke="white" stroke-width="0.5"/>
+<path d="M39.5 48V40H32.5V48" stroke="white"/>
+<path d="M63.5 48V40H56.5V48" stroke="white"/>
+<path d="M39.5 33.5V37.5C39.5 44.1274 44.8726 49.5 51.5 49.5V49.5C58.1274 49.5 63.5 44.1274 63.5 37.5V33.5" stroke="white"/>
+<path d="M63.5 33.5V41C63.5 45.1421 66.8579 48.5 71 48.5V48.5" stroke="white"/>
+<path d="M25 51.5H27.5V51.5C34.1274 51.5 39.5 46.1274 39.5 39.5V33.5" stroke="white"/>
+<path d="M32.5 33.5V37.5C32.5 44.1274 37.8726 49.5 44.5 49.5V49.5C51.1274 49.5 56.5 44.1274 56.5 37.5V33.5" stroke="white"/>
+<path d="M56.5 33.5V39.5C56.5 46.1274 61.8726 51.5 68.5 51.5V51.5H71" stroke="white"/>
+<path d="M32.5 33.5V41C32.5 45.1421 29.1421 48.5 25 48.5V48.5" stroke="white"/>
+</svg>
