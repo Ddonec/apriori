@@ -344,6 +344,9 @@
    .line-into-block-footer_img {
       display: none;
    }
+   .home-collection {
+      padding: 32px 15px 24px;
+   }
 }
 
 @media (max-width: 400px) {
