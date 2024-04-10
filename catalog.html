@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="./css/fonts.css" />
+      <link rel="stylesheet" href="./css/default.css" />
+      <link rel="stylesheet" href="./css/main.css" />
+      <link rel="stylesheet" href="./css/media.css" />
+   </head>
+   <body>
+      <header class="catalog-header">
+         <nav class="home-nav-menu">
+            <div class="burger-btn">
+               <img class="svg-class" src="./assets/icon/nav-btn-dark.svg" alt="" />
+            </div>
+            <div class="logo-icon">
+               <img src="./assets/icon/Logo_Apriori-dark.svg" alt="" />
+            </div>
+            <ul class="nav-buttons">
+               <li><img src="./assets/icon/nav-1-dark.svg" alt="" /></li>
+               <li><img src="./assets/icon/nav-2-dark.svg" alt="" /></li>
+               <li><img src="./assets/icon/nav-3-dark.svg" alt="" /></li>
+               <li><img src="./assets/icon/nav-4-dark.svg" alt="" /></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <section class="catalog-first-section section-default">
+            <div class="bread-crumbs">
+               <a href="">Главная</a>
+               <span>|</span>
+               <a href="">Каталог</a>
+               <span>|</span>
+               <a href="">Декор</a>
+               <span>:</span>
+            </div>
+            <h1 class="title-home title-no-home">Настенный декор</h1>
+            <div class="filter-box">
+               <select class="cs-select cs-skin-rotate">
+                  <option value="1">Категории</option>
+                  <option value="2">Зеркала</option>
+                  <option value="3">Картины</option>
+                  <option value="4">Рамки</option>
+                  <option value="5">Бра</option>
+                  <option value="6">Композиции</option>
+                  <option value="7">Новогоднее</option>
+               </select>
+               <select class="cs-select cs-skin-rotate">
+                  <option value="1">Цена</option>
+                  <option value="2">Дороже</option>
+                  <option value="3">Дешевле</option>
+               </select>
+               <select class="cs-select cs-plus">
+                  <option value="1">Цвет</option>
+                  <option value="2">белый</option>
+                  <option value="3">черный</option>
+               </select>
+               <select class="cs-select cs-plus">
+                  <option value="1">Размер</option>
+                  <option value="2">Большой</option>
+                  <option value="3">Маленький</option>
+               </select>
+               <select class="cs-select cs-plus">
+                  <option value="1">Материал</option>
+                  <option value="2">Дерево</option>
+                  <option value="3">Золото</option>
+               </select>
+               <select class="cs-select cs-last">
+                  <option value="1">По популярности</option>
+                  <option value="2">По убыванию</option>
+                  <option value="3">По возрастанию</option>
+               </select>
+            </div>
+         </section>
+      </main>
+   </body>
+   <script src="js/classie.js"></script>
+   <script src="js/selectFx.js"></script>
+   <script>
+      (function () {
+         [].slice.call(document.querySelectorAll("select.cs-select")).forEach(function (el) {
+            new SelectFx(el);
+         });
+      })();
+   </script>
+</html>

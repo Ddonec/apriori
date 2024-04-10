@@ -92,6 +92,9 @@ h1 {
    letter-spacing: 0.01em;
    color: #fff;
 }
+.title-no-home {
+   color: #000;
+}
 
 .line {
    display: flex;
@@ -1111,6 +1114,171 @@ footer {
 .accordion__item:not(.accordion__item_show) .accordion__body {
    display: none;
 }
+
+/* 3 page */
+
+.catalog-header {
+   padding: 32px 56px 48px;
+}
+.bread-crumbs,
+.bread-crumbs a {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.24;
+   letter-spacing: 0.01em;
+   color: rgba(29, 29, 29, 0.48);
+   text-decoration: none;
+}
+.bread-crumbs {
+   margin-bottom: 24px;
+}
+.filter-box {
+   margin-top: 48px;
+   display: flex;
+   gap: 16px;
+}
+
+/* Default custom select styles */
+div.cs-select {
+   display: inline-block;
+   vertical-align: middle;
+   position: relative;
+   text-align: left;
+   /* background: #fff; */
+   z-index: 100;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 1.24;
+   letter-spacing: 0.01em;
+   color: #1d1d1d;
+}
+
+div.cs-select:focus {
+   outline: none;
+}
+
+.cs-select select {
+   display: none;
+}
+.cs-placeholder {
+   border: 1px solid rgba(29, 29, 29, 0.48);
+   border-radius: 24px;
+   padding: 7px 16px 7px 24px;
+}
+
+.cs-select span {
+   display: block;
+   position: relative;
+   cursor: pointer;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+/* Placeholder and selected option */
+.cs-select > span {
+   padding-right: 2.7em;
+}
+
+.cs-select > span::after,
+.cs-select .cs-selected span::after {
+   speak: none;
+   position: absolute;
+   top: 50%;
+   -webkit-transform: translateY(-50%);
+   transform: translateY(-50%);
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.cs-select > span::after {
+   content: "";
+   width: 24px;
+   height: 24px;
+   background-image: url(../assets/icon/arrow-drop.svg);
+   margin-left: 16px;
+}
+.cs-plus > span::after {
+   background-image: url(../assets/icon/plus-drop.svg);
+}
+.cs-last > span::after {
+   background-image: url(../assets/icon/arrow-drop-white.svg);
+}
+
+.cs-select .cs-selected span::after {
+   margin-left: 1em;
+}
+
+.cs-select.cs-active > span::after {
+   -webkit-transform: translateY(-50%) rotate(180deg);
+   transform: translateY(-50%) rotate(180deg);
+}
+
+/* Options */
+.cs-select .cs-options {
+   position: absolute;
+   overflow: hidden;
+   width: 330px;
+   background: #fff;
+   visibility: hidden;
+   border: 1px solid rgba(29, 29, 29, 0.48);
+   border-radius: 10px;
+}
+
+.cs-select.cs-active .cs-options {
+   visibility: visible;
+}
+
+.cs-select ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+}
+
+.cs-select ul span {
+   padding: 12px;
+   padding-left: 24px;
+}
+
+.cs-select ul li.cs-focus span {
+   background-color: #ddd;
+}
+
+/* Optgroup and optgroup label */
+.cs-select li.cs-optgroup ul {
+   padding-left: 1em;
+}
+
+.cs-select li.cs-optgroup > span {
+   cursor: default;
+}
+
+.section-default {
+   padding: 0 56px;
+}
+div.cs-last {
+   margin-left: auto;
+   background: #6d7762;
+   color: white;
+   border-radius: 24px;
+}
+.cs-last li span {
+   background: #6d7762;
+}
+.cs-last .cs-options {
+   width: 100%;
+}
+
 /*  */
 
 /* */
