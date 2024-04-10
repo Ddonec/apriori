@@ -991,6 +991,7 @@ footer {
    letter-spacing: 0.01em;
    text-transform: uppercase;
    color: #1d1d1d;
+   white-space: nowrap;
 }
 .huge_price span {
    font-weight: 400;
@@ -1093,11 +1094,6 @@ footer {
 .accordion__item_show .accordion__header_img,
 .accordion__item_slidedown .accordion__header_img {
    transform: rotate(-180deg);
-}
-
-.accordion__item:not(.accordion__item_show) .accordion__header {
-   border-bottom-right-radius: 0.25rem;
-   border-bottom-left-radius: 0.25rem;
 }
 
 .accordion__content {
