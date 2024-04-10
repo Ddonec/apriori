@@ -1067,8 +1067,7 @@ footer {
    align-items: center;
    cursor: pointer;
    transition: background-color 0.2s ease-out;
-   height: 88px;
-   padding-right: 23px;
+   padding: 23px 23px 37px 0;
    background-image: url(../assets/icon/underline.svg);
    background-position: bottom;
    background-repeat: no-repeat;
@@ -1081,20 +1080,15 @@ footer {
    color: #6c6050;
 }
 
-.accordion__header::after {
-   flex-shrink: 0;
-   width: 1.25rem;
-   height: 1.25rem;
-   margin-left: auto;
-   background-image: url("../assets/icon/Vector\ 111.svg");
-   background-repeat: no-repeat;
-   background-size: 1.25rem;
-   content: "";
-   transition: transform 0.2s ease-out;
+.accordion__header_title {
+   width: 80%;
+}
+.accordion__header_img {
+   transition: 0.2s ease;
 }
 
-.accordion__item_show .accordion__header::after,
-.accordion__item_slidedown .accordion__header::after {
+.accordion__item_show .accordion__header_img,
+.accordion__item_slidedown .accordion__header_img {
    transform: rotate(-180deg);
 }
 
