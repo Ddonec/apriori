@@ -1439,6 +1439,351 @@ div.cs-last {
 .section-m-50 {
    margin: 50px 0;
 }
+
+/* 4 page  */
+.product-header {
+   padding: 32px 56px;
+}
+.product-page-main-photo {
+   aspect-ratio: 1;
+   background: #fff;
+   border-radius: 24px;
+   padding: 34px;
+   display: flex;
+}
+.left-p-p {
+   width: calc(50% - 12px);
+   display: flex;
+   flex-wrap: wrap;
+   gap: 24px;
+}
+.right-p-p {
+   width: calc(50% - 12px);
+   padding: 30px 24px 24px;
+   background: #fff;
+   border-radius: 24px;
+   height: fit-content;
+}
+.p-p-section {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 24px;
+}
+.right-p-p > h1 {
+   color: #000;
+}
+.img-default {
+   object-fit: cover;
+   object-position: center;
+   border-radius: 24px;
+   width: 100%;
+   margin: auto;
+}
+.right-p-p_subtitle {
+   font-family: "TT Ramillas Trl", sans-serif;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 1.3;
+   letter-spacing: 0.01em;
+   color: #1d1d1d;
+
+   margin-top: 16px;
+}
+.gray-line {
+   display: flex;
+   width: 100%;
+   align-items: center;
+   margin: 24px 0;
+}
+.gray-line_line {
+   width: 100%;
+   height: 1px;
+   background: #1d1d1d;
+   opacity: 0.48;
+}
+.gray-line_line-24 {
+   width: 100%;
+   height: 1px;
+   background: #1d1d1d;
+   opacity: 0.24;
+}
+
+.right-p-p_price-title {
+   font-family: "Inter", sans-serif;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 1.24;
+   letter-spacing: 0.01em;
+   color: #1d1d1d;
+}
+.right-p-p_price-value {
+   font-family: "Inter", sans-serif;
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 1.3;
+   letter-spacing: 0.01em;
+   text-transform: uppercase;
+   color: #1d1d1d;
+
+   margin: 16px 0;
+}
+.right-p-p_price-value span {
+   font-weight: 400;
+}
+.right-p-p_in-stock {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 1.24;
+   letter-spacing: 0.01em;
+   color: #6d7762;
+
+   margin-bottom: 24px;
+}
+.right-p-p_color-change {
+   display: flex;
+   gap: 16px;
+   margin: 16px 0 30px;
+}
+.right-p-p_color__box {
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+}
+.right-p-p_color__value {
+   width: 28px;
+   height: 28px;
+   border-radius: 50%;
+}
+.p-p-value-1 {
+   background: #f7be2b;
+}
+.p-p-value-2 {
+   background: #cfcfcf;
+}
+.right-p-p_color__value-active {
+   border: 1px solid rgba(29, 29, 29, 0.48);
+}
+.right-p-p_price-discription {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.24;
+   color: #1d1d1d;
+
+   margin: 16px 0 24px;
+}
+.right-p-p_price-show-more {
+   display: flex;
+   align-items: center;
+}
+.right-p-p_show-more-btn {
+   display: flex;
+   gap: 16px;
+   margin: 0 24px;
+   align-items: center;
+
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.24;
+   color: #6d7762;
+}
+.right-p-p_show-more-btn p {
+   flex-shrink: 0;
+   width: max-content;
+}
+.right-p-p_control-panel {
+   display: flex;
+   align-items: center;
+   gap: 24px;
+   margin-top: 40px;
+}
+.right-p-p_control__to-cart {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 1.24;
+   letter-spacing: 0.01em;
+   color: #fff;
+
+   border-radius: 24px;
+   padding: 16px 32px 18px 32px;
+   width: 183px;
+   height: 64px;
+   background: #ff5151;
+}
+.right-p-p_control__like {
+   width: 64px;
+   height: 64px;
+   border-radius: 50%;
+   display: flex;
+   background: #6d7762;
+}
+.right-p-p_control__text {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.24;
+   text-align: right;
+   color: #1d1d1d;
+
+   margin-left: auto;
+}
+.product-page-photo {
+   width: calc(50% - 12px);
+   aspect-ratio: 1;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 24px;
+}
+.play-video-btn-box {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.dscription-p-p_tabs {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 1.24;
+   letter-spacing: 0.01em;
+   color: #1d1d1d;
+   display: flex;
+}
+.dscription-p-p_tab {
+   padding: 13px 24px;
+   border-radius: 24px;
+}
+.dscription-p-p_tab.active {
+   background-color: #fff;
+}
+.dscription-p-p_text {
+   padding: 24px;
+   background: #fff;
+   border-radius: 24px;
+}
+.dscription-p-p_text__title {
+   font-family: "TT Ramillas Trl", sans-serif;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   color: #1d1d1d;
+   margin-bottom: 50px;
+}
+.dscription-p-p {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   width: calc(50% - 12px);
+}
+.text-right {
+   margin-left: auto;
+}
+.dscription-p-p_text__characteristic {
+   display: flex;
+}
+.dscription-p-p_text__info-block {
+   display: flex;
+   flex-direction: column;
+   margin: 24px 0 32px;
+   gap: 16px;
+
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 1.24;
+   letter-spacing: 0.01em;
+   color: #1d1d1d;
+}
+.p-p-section-2 {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 96px;
+   gap: 24px;
+}
+
+.product-interior-main-img {
+   width: calc(50% - 12px);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   aspect-ratio: 892/933;
+   border-radius: 24px;
+}
+.more-products-interior {
+   width: calc(50% - 12px);
+}
+
+.more-products-interior_product-box {
+}
+.more-products-interior_product {
+   display: flex;
+   align-items: center;
+   padding: 16px;
+   border-radius: 16px;
+}
+.interior_product-box__img {
+   margin-right: 24px;
+   border-radius: 8px;
+   object-fit: cover;
+   object-position: center;
+   width: 94px;
+   height: 94px;
+}
+.more-products-interior_product.in-cart {
+   background: #fff888;
+}
+.product-box__text-box___title {
+   font-family: "TT Ramillas Trl", sans-serif;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 1.3;
+   letter-spacing: 0.01em;
+   color: #1d1d1d;
+}
+.product-box__text-box___subtitle {
+   font-family: "TT Ramillas Trl", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.3;
+   letter-spacing: 0.01em;
+   color: #1d1d1d;
+}
+.interior_product-box__price {
+   margin-left: auto;
+   flex-shrink: 0;
+}
+.product-box__price___price {
+   font-family: "Inter", sans-serif;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 1.3;
+   letter-spacing: 0.01em;
+   text-transform: uppercase;
+   text-align: right;
+   color: #1d1d1d;
+}
+.product-box__price___price span {
+   font-weight: 400;
+   font-size: 16px;
+}
+.product-box__price___price-old {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.24;
+   letter-spacing: 0.01em;
+   text-decoration: line-through;
+   text-align: right;
+   color: #1d1d1d;
+}
 /*  */
 
 /* */
@@ -1447,6 +1792,9 @@ div.cs-last {
 
 .opacity {
    opacity: 0.5;
+}
+.zero-opacity {
+   opacity: 0;
 }
 .none {
    display: none;
