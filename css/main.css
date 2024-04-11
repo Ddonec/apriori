@@ -778,6 +778,26 @@ h1 {
    align-items: center;
    justify-content: center;
 }
+.product_discont-value {
+   width: 48px;
+   height: 48px;
+   background: #000;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   font-family: "Inter", sans-serif;
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 1.3;
+   letter-spacing: -0.02em;
+   text-transform: uppercase;
+   text-align: center;
+   color: #fff;
+
+   margin-left: 16px;
+}
 footer {
    display: flex;
    width: 100%;
@@ -1450,6 +1470,7 @@ div.cs-last {
    border-radius: 24px;
    padding: 34px;
    display: flex;
+   width: 100%;
 }
 .left-p-p {
    width: calc(50% - 12px);
@@ -1783,6 +1804,132 @@ div.cs-last {
    text-decoration: line-through;
    text-align: right;
    color: #1d1d1d;
+}
+.product-box__price___price-old.gift {
+   text-decoration: unset;
+}
+
+/* 5 page  */
+.basket-tabs {
+   display: flex;
+   gap: 16px;
+   width: 100%;
+}
+.basket-tabs_tab {
+   background: #fff;
+   border-radius: 24px;
+   padding: 9px 24px;
+   display: flex;
+   align-items: center;
+
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 24px;
+   letter-spacing: 0.01em;
+   color: #1d1d1d;
+}
+.basket-tabs_clear {
+   color: #ff5151;
+}
+.basket-zone {
+   margin-top: 48px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 24px;
+}
+.basket {
+   padding: 24px;
+   background: #fff;
+   border-radius: 24px;
+   width: calc(75% - 12px);
+}
+.basket_title {
+   font-family: "TT Ramillas Trl", sans-serif;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 1.1;
+   letter-spacing: 0.01em;
+   color: #1d1d1d;
+}
+.basket-count-buttons {
+   display: flex;
+   gap: 16px;
+   margin-left: 16px;
+}
+.basket-btn_plus,
+.basket-btn_minus {
+   width: 64px;
+   height: 64px;
+   position: relative;
+   border-radius: 50%;
+}
+.basket-btn_plus {
+   background: #fff;
+}
+.basket-btn_plus::after {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   height: 1.5px;
+   width: 20px;
+   background: #000;
+}
+.basket-btn_minus {
+   background: #ff5151;
+}
+.basket-btn_minus::after {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   height: 1.5px;
+   width: 20px;
+   background: #fff;
+}
+.basket-btn_minus::before {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) rotate(90deg);
+   height: 1.5px;
+   width: 20px;
+   background: #fff;
+}
+.basket_product {
+   display: flex;
+   padding: 16px;
+   border-radius: 16px;
+   align-items: center;
+}
+.basket_product.in-cart {
+   background: #fff888;
+}
+.basket_product__text {
+   width: 55%;
+   max-width: 772px;
+}
+.basket_product__text-title {
+   font-family: "TT Ramillas Trl", sans-serif;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 1.3;
+   letter-spacing: 0.01em;
+   color: #1d1d1d;
+}
+.basket_product__text-subtitle {
+   font-family: "TT Ramillas Trl", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.3;
+   letter-spacing: 0.01em;
+   color: #1d1d1d;
+}
+.basket-product-price-box {
+   margin-left: auto;
 }
 /*  */
 
