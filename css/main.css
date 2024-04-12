@@ -210,6 +210,11 @@ h1 {
    display: flex;
    align-items: center;
 }
+.line-into-block-footer {
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
 
 .catalog-home-blocks {
    display: flex;
