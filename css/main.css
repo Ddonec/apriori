@@ -1957,6 +1957,7 @@ div.cs-last {
    width: calc(25% - 12px);
    display: flex;
    flex-direction: column;
+   height: fit-content;
 }
 .basket_title {
    font-family: "TT Ramillas Trl", sans-serif;
@@ -1991,6 +1992,11 @@ div.cs-last {
    font-size: 16px;
    line-height: 1.3;
    color: #1d1d1d;
+
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   width: 60%;
 }
 .block_row__price {
    font-family: "Inter", sans-serif;
@@ -2000,6 +2006,7 @@ div.cs-last {
    letter-spacing: 0.01em;
    text-align: right;
    color: #1d1d1d;
+   flex-shrink: 0;
 }
 .block_row__price span {
    font-weight: 400;
@@ -2020,10 +2027,20 @@ div.cs-last {
    margin-bottom: 24px;
 
    font-family: "Inter", sans-serif;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.24;
+   text-transform: uppercase;
+   color: #1d1d1d;
+}
+.promo-imput::placeholder {
+   font-family: "Inter", sans-serif;
    font-weight: 400;
    font-size: 16px;
    line-height: 1.24;
    color: #1d1d1d;
+   opacity: 0.48;
+   text-transform: capitalize;
 }
 .summ-gift {
    margin: 16px 0 24px;
@@ -2046,6 +2063,125 @@ div.cs-last {
    width: 100%;
    text-align: center;
 }
+
+.booking-form {
+   margin-top: 48px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 24px;
+}
+.booking-form_input {
+   border-radius: 16px;
+   padding: 22px 24px;
+   background: #f8f3ed;
+   border: none;
+   color: #1d1d1d70;
+}
+.booking-form_input-comment {
+   border: 4px solid #f8f3ed;
+   border-radius: 16px;
+   padding: 22px 24px;
+   width: 100%;
+   height: 128px;
+   position: relative;
+}
+.booking-form_input-comment::placeholder {
+   top: 22px;
+   position: absolute;
+}
+.booking-form_input.no-need {
+   border: 4px solid #f8f3ed;
+   background: #fff;
+}
+.b-f-i-1 {
+   width: calc(100% / 3 - 16px);
+}
+.b-f-i-2 {
+   width: calc(100% / 3 - 16px);
+}
+.b-f-i-3 {
+   width: calc(100% / 3 - 16px);
+}
+.b-f-i-4 {
+   width: calc(100% / 3 * 2 - 8px);
+}
+.b-f-i-5 {
+   width: calc(100% / 3 * 2 - 8px);
+}
+.you-owner-check {
+   display: flex;
+   width: 100%;
+   align-items: center;
+   gap: 16px;
+   margin-bottom: 48px;
+
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.24;
+   color: #1d1d1d;
+}
+.label-for-toggle-checkbox {
+   border-radius: 16px;
+   padding: 14px 16px;
+   width: 116px;
+   height: 48px;
+   background: #f8f3ed;
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.toggle-checkbox-switcher {
+   border-radius: 16px;
+   padding: 14px 16px;
+   width: 54px;
+   height: 48px;
+   background: #6d7762;
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   transition: 0.6s ease;
+}
+#toggle-checkbox {
+   display: none;
+}
+.approve-box {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+
+   margin: 37px 0 48px;
+}
+
+#approve-input {
+   display: none;
+}
+.approve-input-label {
+   border: 1.5px solid #1d1d1d;
+   border-radius: 10px;
+   width: 24px;
+   height: 24px;
+   background: #f8f3ed;
+}
+.approve-text {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.24;
+   color: #1d1d1d;
+}
+.approve-text a {
+   text-decoration: none;
+}
+.booking-section {
+   margin-bottom: 96px;
+}
+
 .coral {
    color: #ff5151;
 }
