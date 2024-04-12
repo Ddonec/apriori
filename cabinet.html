@@ -13,16 +13,16 @@
       <header class="product-header">
          <nav class="home-nav-menu">
             <div class="burger-btn">
-               <img class="svg-class" src="./assets/icon/nav-btn-dark.svg" alt="" />
+               <img class="svg-class pointer" src="./assets/icon/nav-btn-dark.svg" alt="" />
             </div>
             <div class="logo-icon">
                <img src="./assets/icon/Logo_Apriori-dark.svg" alt="" />
             </div>
             <ul class="nav-buttons">
-               <li><img src="./assets/icon/nav-1-dark.svg" alt="" /></li>
-               <li><img src="./assets/icon/nav-2-dark.svg" alt="" /></li>
-               <li><img src="./assets/icon/nav-3-dark.svg" alt="" /></li>
-               <li><img src="./assets/icon/nav-4-dark.svg" alt="" /></li>
+               <li><img src="./assets/icon/nav-1-dark.svg" alt="" class="pointer" /></li>
+               <li><img src="./assets/icon/nav-2-dark.svg" alt="" class="pointer" /></li>
+               <li><img src="./assets/icon/nav-3-dark.svg" alt="" class="pointer" /></li>
+               <li><img src="./assets/icon/nav-4-dark.svg" alt="" class="pointer" /></li>
             </ul>
          </nav>
       </header>
@@ -36,11 +36,11 @@
             </div>
             <h1 class="title-home title-no-home">Личный кабинет</h1>
             <div class="cabinet-tabs">
-               <p class="cabinet-tab active">Профиль</p>
-               <p class="cabinet-tab">Заказы</p>
-               <p class="cabinet-tab">Бонусы</p>
+               <p class="cabinet-tab pointer active">Профиль</p>
+               <p class="cabinet-tab pointer">Заказы</p>
+               <p class="cabinet-tab pointer">Бонусы</p>
             </div>
-            <div class="cabinet-zone cabinet-tab-1 none">
+            <div class="cabinet-zone cabinet-tab-1">
                <div class="basket">
                   <h3 class="basket_title">Ваш профиль</h3>
                   <form class="booking-form" action="">
@@ -54,7 +54,7 @@
                   <div class="cabinet-adress-box">
                      <h3 class="basket_title">Адрес доставки</h3>
                      <div class="add-adress-box">
-                        <div class="basket-btn_minus"></div>
+                        <div class="basket-btn_minus pointer"></div>
                         <span class="add-adress-text">Добавить адрес</span>
                      </div>
                   </div>
@@ -66,7 +66,7 @@
                      </form>
                      <div class="you-owner-check adress">
                         <input type="checkbox" id="toggle-checkbox" />
-                        <label class="label-for-toggle-checkbox" for="toggle-checkbox">
+                        <label class="label-for-toggle-checkbox pointer" for="toggle-checkbox">
                            <span>Да</span> <span>Нет</span>
                            <div class="toggle-checkbox-switcher">Да</div>
                         </label>
@@ -74,13 +74,13 @@
                      </div>
                      <div class="approve-box">
                         <input id="approve-input" type="checkbox" />
-                        <label class="approve-input-label" for="approve-input"></label>
+                        <label class="approve-input-label pointer" for="approve-input"></label>
                         <p class="approve-text">Я даю согласие на обработку своих <a class="coral" href="">персональных данных</a></p>
                      </div>
                   </div>
                   <div class="cabinet-btns-change">
-                     <div class="cabinet-change-btn">Редактировать данные</div>
-                     <div class="cabinet-change-pass-btn">Изменить пароль</div>
+                     <div class="cabinet-change-btn pointer">Редактировать данные</div>
+                     <div class="cabinet-change-pass-btn pointer">Изменить пароль</div>
                   </div>
                </div>
                <div class="basket-summ">
@@ -125,25 +125,25 @@
                      <p class="summ-title">Итог :</p>
                      <p class="block_row__price">147 880 <span>₽</span></p>
                   </div>
-                  <p class="summ-block_discr cashback-info">Как работает кешбэк? <img src="./assets/icon/coral-quest.svg" alt="" /></p>
+                  <p class="summ-block_discr cashback-info">Как работает кешбэк? <img src="./assets/icon/coral-quest.svg" class="pointer" alt="" /></p>
                </div>
             </div>
-            <div class="cabinet-zone cabinet-tab-2">
+            <div class="cabinet-zone cabinet-tab-2 none">
                <div class="orders">
                   <h3 class="basket_title">Список ваших заказов</h3>
                   <div class="orders-tabs">
-                     <p class="orders-tab active">Все</p>
-                     <p class="orders-tab">Выполнен</p>
-                     <p class="orders-tab">Отменен</p>
-                     <p class="orders-tab">Возврат</p>
-                     <p class="orders-tab">Не оформлен</p>
-                     <p class="orders-tab">Оплачен</p>
-                     <p class="orders-tab">Выполняется</p>
+                     <p class="orders-tab pointer active">Все</p>
+                     <p class="orders-tab pointer">Выполнен</p>
+                     <p class="orders-tab pointer">Отменен</p>
+                     <p class="orders-tab pointer">Возврат</p>
+                     <p class="orders-tab pointer">Не оформлен</p>
+                     <p class="orders-tab pointer">Оплачен</p>
+                     <p class="orders-tab pointer">Выполняется</p>
                   </div>
                   <div class="orders-period">
                      <input type="date" id="order-period-start" />
                      <input type="date" id="order-period-end" />
-                     <img src="./assets/icon/coral-search.svg" alt="" />
+                     <img src="./assets/icon/coral-search.svg" class="pointer" alt="" />
                   </div>
                   <ul class="order-list">
                      <li class="order-list-item-1">Заказы</li>
@@ -250,7 +250,7 @@
                      <p class="summ-title">Итог :</p>
                      <p class="block_row__price">147 880 <span>₽</span></p>
                   </div>
-                  <p class="summ-block_discr cashback-info">Как работает кешбэк? <img src="./assets/icon/coral-quest.svg" alt="" /></p>
+                  <p class="summ-block_discr cashback-info">Как работает кешбэк? <img src="./assets/icon/coral-quest.svg" class="pointer" alt="" /></p>
                </div>
             </div>
          </section>
@@ -260,7 +260,7 @@
          </section>
          <div class="viewed-products-overflow-container">
             <div class="viewed-products-container catalog-viewed">
-               <div class="viewed-product">
+               <div class="viewed-product pointer">
                   <img class="viewed-product_img" src="./assets/content/viewed-product-1.png" alt="" />
                   <p class="viewed-product_name">Зеркало Шахерезада 99 см Настенное</p>
                   <div class="viewed-product_price">
@@ -269,7 +269,7 @@
                   </div>
                   <div class="viewed-product_discont-value none"></div>
                </div>
-               <div class="viewed-product">
+               <div class="viewed-product pointer">
                   <img class="viewed-product_img" src="./assets/content/viewed-product-2.png" alt="" />
                   <p class="viewed-product_name">Зеркало Лучи солнца 89 см Золотое</p>
                   <div class="viewed-product_price">
@@ -278,7 +278,7 @@
                   </div>
                   <div class="viewed-product_discont-value none">%</div>
                </div>
-               <div class="viewed-product">
+               <div class="viewed-product pointer">
                   <img class="viewed-product_img" src="./assets/content/viewed-product-3.png" alt="" />
                   <p class="viewed-product_name">Тарелка декоративная 41 см 4 вида</p>
                   <div class="viewed-product_price">
@@ -287,7 +287,7 @@
                   </div>
                   <div class="viewed-product_discont-value">-25%</div>
                </div>
-               <div class="viewed-product">
+               <div class="viewed-product pointer">
                   <img class="viewed-product_img" src="./assets/content/viewed-product-4.png" alt="" />
                   <p class="viewed-product_name">Лампа настольная Розовый Зефир 63 см</p>
                   <div class="viewed-product_price">
