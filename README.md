@@ -9,3 +9,7 @@
 [product page](https://ddonec.github.io/apriori/product.html)
 
 [basket page](https://ddonec.github.io/apriori/basket.html)
+
+[booking page](https://ddonec.github.io/apriori/booking.html)
+
+[cabinet page](https://ddonec.github.io/apriori/cabinet.html)
