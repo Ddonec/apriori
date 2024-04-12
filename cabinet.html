@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="./css/fonts.css" />
+      <link rel="stylesheet" href="./css/default.css" />
+      <link rel="stylesheet" href="./css/main.css" />
+      <link rel="stylesheet" href="./css/media.css" />
+   </head>
+   <body>
+      <header class="product-header">
+         <nav class="home-nav-menu">
+            <div class="burger-btn">
+               <img class="svg-class" src="./assets/icon/nav-btn-dark.svg" alt="" />
+            </div>
+            <div class="logo-icon">
+               <img src="./assets/icon/Logo_Apriori-dark.svg" alt="" />
+            </div>
+            <ul class="nav-buttons">
+               <li><img src="./assets/icon/nav-1-dark.svg" alt="" /></li>
+               <li><img src="./assets/icon/nav-2-dark.svg" alt="" /></li>
+               <li><img src="./assets/icon/nav-3-dark.svg" alt="" /></li>
+               <li><img src="./assets/icon/nav-4-dark.svg" alt="" /></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <section class="booking-section section-default">
+            <div class="bread-crumbs">
+               <a href="">Главная</a>
+               <span>|</span>
+               <a href="">Корзина</a>
+               <span>:</span>
+            </div>
+            <h1 class="title-home title-no-home">Личный кабинет</h1>
+            <div class="basket-zone">
+               <div class="basket">
+                  <h3 class="basket_title">Ваш профиль</h3>
+                  <form class="booking-form" action="">
+                     <input type="text" class="booking-form_input b-f-i-1" placeholder="Ваше имя" />
+                     <input type="text" class="booking-form_input b-f-i-2" placeholder="Ваша фамилия" />
+                     <input type="text" class="booking-form_input b-f-i-3 no-need" placeholder="Отчество (Не обязательно)" />
+                     <input type="email" class="booking-form_input b-f-i-4" placeholder="Email" />
+                     <input type="tel" class="booking-form_input b-f-i-5" placeholder="Телефон" />
+                     <input type="number" class="booking-form_input b-f-i-6" placeholder="Дата рождения" />
+                  </form>
+                  <div class="cabinet-adress-box">
+                     <h3 class="basket_title">Адрес доставки</h3>
+                     <div class="add-adress-box">
+                        <div class="basket-btn_minus"></div>
+                        <span class="add-adress-text">Добавить адрес</span>
+                     </div>
+                  </div>
+                  <div class="cabinet-form-column">
+                     <form class="cabinet-form" action="">
+                        <input type="text" class="booking-form_input b-f-i-1" placeholder="Город / Населенный пункт " />
+                        <input type="text" class="booking-form_input b-f-i-2" placeholder="Улица и дом" />
+                        <input type="text" class="booking-form_input b-f-i-3 no-need" placeholder="Квартира / Офис (Не обязательно)" />
+                     </form>
+                     <div class="you-owner-check adress">
+                        <input type="checkbox" id="toggle-checkbox" />
+                        <label class="label-for-toggle-checkbox" for="toggle-checkbox">
+                           <span>Да</span> <span>Нет</span>
+                           <div class="toggle-checkbox-switcher">Да</div>
+                        </label>
+                        <p>Оставить адрес по умолчанию</p>
+                     </div>
+                     <div class="approve-box">
+                        <input id="approve-input" type="checkbox" />
+                        <label class="approve-input-label" for="approve-input"></label>
+                        <p class="approve-text">Я даю согласие на обработку своих <a class="coral" href="">персональных данных</a></p>
+                     </div>
+                  </div>
+                  <div class="cabinet-btns-change">
+                     <div class="cabinet-change-btn">Редактировать данные</div>
+                     <div class="cabinet-change-pass-btn">Изменить пароль</div>
+                  </div>
+               </div>
+               <div class="basket-summ">
+                  <h3 class="basket_title">Сумма заказа</h3>
+                  <div class="summ-block">
+                     <p class="summ-title">Стоимость</p>
+                     <div class="summ-block_row">
+                        <p class="block_row__value">Зеркало Лучи солнца</p>
+                        <p class="block_row__price">45 900 <span>₽</span></p>
+                     </div>
+                     <div class="summ-block_row">
+                        <p class="block_row__value">Интерьерная подушка в восточном стиле</p>
+                        <p class="block_row__price">3 х 4 900 <span>₽</span></p>
+                     </div>
+                     <div class="summ-block_row">
+                        <p class="block_row__value">Свечи для романтического вечера Wax Lyrical</p>
+                        <p class="block_row__price">300 <span>₽</span></p>
+                     </div>
+                     <div class="summ-block_row">
+                        <p class="block_row__value">Свеча белая на подставке</p>
+                        <p class="block_row__price">0 <span>₽</span></p>
+                     </div>
+                     <div class="summ-block_row">
+                        <p class="block_row__value coral">Скидка</p>
+                        <p class="block_row__price coral">6 000 <span>₽</span></p>
+                     </div>
+                     <div class="summ-block_row">
+                        <p class="block_row__value">Доставка</p>
+                        <p class="block_row__price">Бесплатно<span></span></p>
+                     </div>
+                     <p class="summ-block_discr">Акция <span class="coral">«Бесплатная доставка»</span> действует при заказе от 3 000 рублей</p>
+                  </div>
+                  <div class="gray-line">
+                     <img class="opacity" src="./assets/icon/gray-circle.svg" alt="" />
+                     <div class="gray-line_line-24"></div>
+                  </div>
+                  <p class="summ-title">Подарок</p>
+                  <div class="summ-block_row summ-gift">
+                     <p class="block_row__value">Свеча белая на подставке</p>
+                     <p class="block_row__price">0 <span>₽</span></p>
+                  </div>
+                  <input type="text" class="promo-imput" id="promo-imput" placeholder="Введите промокод" />
+                  <p class="product-box__price___price-old opacity total-summ-old">66 900 ₽</p>
+                  <div class="summ-block_row summ-total-row">
+                     <p class="summ-title">Итог :</p>
+                     <p class="block_row__price">60 900 <span>₽</span></p>
+                  </div>
+                  <div class="summ-checkout-btn">Оформить заказ</div>
+               </div>
+            </div>
+         </section>
+         <section class="section-default">
+            <h2 class="h2-section mb">Похожие товары</h2>
+            <div class="product-cards-overflow-container">
+               <div class="product-cards-container">
+                  <div class="product-card">
+                     <div class="product-card-image" style="background-image: url('./assets/content/Rectangle\ 1532.png')">
+                        <img class="product-card_like-btn" src="./assets/icon/Button (2).svg" alt="" />
+                     </div>
+                     <div class="product-card_discription">
+                        <div class="product-card_top-discr">
+                           <p class="product-card_name">Стекляная ваза Braun</p>
+                           <p class="product-card_price">16 800 <span>₽</span></p>
+                        </div>
+                        <div class="product-card_subdiscr">36 см | Настольная</div>
+                     </div>
+                  </div>
+
+                  <div class="product-card">
+                     <div class="product-card-image" style="background-image: url('./assets/content/79763\ 1.png')">
+                        <img class="product-card_like-btn" src="./assets/icon/like-black.svg" alt="" />
+                     </div>
+                     <div class="product-card_discription">
+                        <div class="product-card_top-discr">
+                           <p class="product-card_name">Зеркало Лучи солнца</p>
+                           <p class="product-card_price">45 900 <span>₽</span></p>
+                        </div>
+                        <div class="product-card_subdiscr">89 см | Золотое</div>
+                     </div>
+                  </div>
+
+                  <div class="product-card">
+                     <div class="product-card-image" style="background-image: url('./assets/content/Rectangle\ 1533.png')">
+                        <img class="product-card_like-btn" src="./assets/icon/like-black.svg" alt="" />
+                     </div>
+                     <div class="product-card_discription">
+                        <div class="product-card_top-discr">
+                           <p class="product-card_name">Статуэтка Икар</p>
+                           <p class="product-card_price">6 400 <span>₽</span></p>
+                        </div>
+                        <div class="product-card_subdiscr">56 см | Фарфор</div>
+                     </div>
+                  </div>
+
+                  <div class="product-card">
+                     <div class="product-card-image" style="background-image: url('./assets/content/Rectangle\ 1532.png')">
+                        <img class="product-card_like-btn" src="./assets/icon/Button (2).svg" alt="" />
+                     </div>
+                     <div class="product-card_discription">
+                        <div class="product-card_top-discr">
+                           <p class="product-card_name">Стекляная ваза Braun</p>
+                           <p class="product-card_price">16 800 <span>₽</span></p>
+                        </div>
+                        <div class="product-card_subdiscr">36 см | Настольная</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="third-section-control-panel">
+               <img src="./assets/icon/Frame 482379.svg" alt="" />
+               <div class="control-panel_pag-btns">
+                  <img class="control-panel_prev-btn unactive" src="./assets/icon/Button (7).svg" alt="" />
+                  <img class="control-panel_next-btn" src="./assets/icon/Button (7).svg" alt="" />
+               </div>
+            </div>
+         </section>
+         <section class="section-default section-m-50">
+            <h2 class="h2-section mb">Просмотренные товары</h2>
+         </section>
+         <div class="viewed-products-overflow-container">
+            <div class="viewed-products-container catalog-viewed">
+               <div class="viewed-product">
+                  <img class="viewed-product_img" src="./assets/content/viewed-product-1.png" alt="" />
+                  <p class="viewed-product_name">Зеркало Шахерезада 99 см Настенное</p>
+                  <div class="viewed-product_price">
+                     <p class="viewed-product_price-main">38 900 <span>₽</span></p>
+                     <p class="viewed-product_price-sub"></p>
+                  </div>
+                  <div class="viewed-product_discont-value none"></div>
+               </div>
+               <div class="viewed-product">
+                  <img class="viewed-product_img" src="./assets/content/viewed-product-2.png" alt="" />
+                  <p class="viewed-product_name">Зеркало Лучи солнца 89 см Золотое</p>
+                  <div class="viewed-product_price">
+                     <p class="viewed-product_price-main">45 900 <span>₽</span></p>
+                     <p class="viewed-product_price-sub"></p>
+                  </div>
+                  <div class="viewed-product_discont-value none">%</div>
+               </div>
+               <div class="viewed-product">
+                  <img class="viewed-product_img" src="./assets/content/viewed-product-3.png" alt="" />
+                  <p class="viewed-product_name">Тарелка декоративная 41 см 4 вида</p>
+                  <div class="viewed-product_price">
+                     <p class="viewed-product_price-main">11 500 <span>₽</span></p>
+                     <p class="viewed-product_price-sub">9200 ₽</p>
+                  </div>
+                  <div class="viewed-product_discont-value">-25%</div>
+               </div>
+               <div class="viewed-product">
+                  <img class="viewed-product_img" src="./assets/content/viewed-product-4.png" alt="" />
+                  <p class="viewed-product_name">Лампа настольная Розовый Зефир 63 см</p>
+                  <div class="viewed-product_price">
+                     <p class="viewed-product_price-main">29 800 <span>₽</span></p>
+                     <p class="viewed-product_price-sub"></p>
+                  </div>
+                  <div class="viewed-product_discont-value none"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer>
+         <div class="footer_left-side">
+            <img src="./assets/icon/Logo_Apriori.svg" alt="" style="width: 182px" />
+            <div class="footer_discription">
+               <p><span class="footer_bold-text">APRIORI DESIGN</span> © Все права защищены 2022 — 2023</p>
+               <p>Cтоимость и условия приобретения товара действительны на текущую дату</p>
+            </div>
+         </div>
+         <div class="footer_rignt-side">
+            <img class="footer-less-600 none" src="./assets/icon/Logo_Apriori.svg" alt="" style="width: 182px" />
+            <div class="footer_rignt__ul-box">
+               <h5 class="footer-title">Интернет-магазин</h5>
+               <ul class="footer-u-list">
+                  <li><a href="">Акции</a></li>
+                  <li><a href="">Все товары</a></li>
+                  <li><a href="">Лояльность</a></li>
+                  <li><a href="">Доставка и оплата</a></li>
+                  <li><a href="">Новости</a></li>
+               </ul>
+            </div>
+            <div class="footer_rignt__ul-box">
+               <h5 class="footer-title">Сервис</h5>
+               <ul class="footer-u-list">
+                  <li><a href="">Помощь</a></li>
+                  <li><a href="">Обратная связь</a></li>
+                  <li><a href="">Адрес магазина</a></li>
+                  <li><a href="">Публичная оферта</a></li>
+               </ul>
+            </div>
+            <div class="line-into-block-footer">
+               <img class="line-into-block-footer_img" src="./assets/icon/Rectangle 1860.svg" alt="" />
+               <p class="line_line"></p>
+            </div>
+            <div class="footer_rignt__ul-box">
+               <h5 class="footer-title">Контакты</h5>
+               <ul class="footer-u-list">
+                  <li class="footer-tel"><a href="tel:+79137995306">+7 (913) 799-53-06</a></li>
+                  <li><a href="mailto:info@aprioridecor.ru">info@aprioridecor.ru</a></li>
+               </ul>
+            </div>
+            <div class="footer_rignt__ul-box">
+               <h5 class="footer-title">Компания</h5>
+               <ul class="footer-u-list">
+                  <li><a href="">О нас</a></li>
+                  <li><a href="">Сотрудничество</a></li>
+                  <li><a href="">Проект для вас</a></li>
+                  <li><a href="">Вакансии</a></li>
+               </ul>
+            </div>
+            <ul class="footer-social-webs">
+               <li>
+                  <a href=""><img src="./assets/icon/footer-whatsup.svg" alt="" /></a>
+               </li>
+               <li>
+                  <a href=""><img src="./assets/icon/footer-tg.svg" alt="" /></a>
+               </li>
+               <li>
+                  <a href=""><img src="./assets/icon/footer-ig.svg" alt="" /></a>
+               </li>
+               <li>
+                  <a href=""><img src="./assets/icon/footer-vk.svg" alt="" /></a>
+               </li>
+            </ul>
+            <ul class="footer-payment">
+               <li>
+                  <a href=""><img src="./assets/icon/Mastercard.svg" alt="" /></a>
+               </li>
+               <li>
+                  <a href=""><img src="./assets/icon/Visa.svg" alt="" /></a>
+               </li>
+               <li>
+                  <a href=""><img src="./assets/icon/MIR.svg" alt="" /></a>
+               </li>
+            </ul>
+            <div class="footer_discription footer-less-600 none">
+               <p><span class="footer_bold-text">APRIORI DESIGN</span> © Все права защищены 2022 — 2023</p>
+               <p>Cтоимость и условия приобретения товара действительны на текущую дату</p>
+            </div>
+         </div>
+      </footer>
+   </body>
+   <script src="./js/booking.js"></script>
+</html>

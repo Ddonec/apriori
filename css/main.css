@@ -2075,6 +2075,20 @@ div.cs-last {
    flex-wrap: wrap;
    gap: 24px;
 }
+.cabinet-form {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 24px;
+}
+.cabinet-form-column {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 24px;
+}
+.cabinet-form-column .approve-box {
+   margin: 0;
+}
 .booking-form_input {
    border-radius: 16px;
    padding: 22px 24px;
@@ -2113,6 +2127,9 @@ div.cs-last {
 .b-f-i-5 {
    width: calc(100% / 3 * 2 - 8px);
 }
+.b-f-i-6 {
+   width: calc(100% / 3 * 2 - 8px);
+}
 .you-owner-check {
    display: flex;
    width: 100%;
@@ -2125,6 +2142,9 @@ div.cs-last {
    font-size: 16px;
    line-height: 1.24;
    color: #1d1d1d;
+}
+.you-owner-check.adress {
+   margin: 0;
 }
 .label-for-toggle-checkbox {
    border-radius: 16px;
@@ -2187,6 +2207,49 @@ div.cs-last {
    margin-bottom: 96px;
 }
 
+/* page 6 */
+
+.cabinet-adress-box {
+   display: flex;
+   justify-content: space-between;
+   width: calc(100% / 3 * 2 - 8px);
+   margin: 39px 0 37px;
+}
+.add-adress-box {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+}
+
+.add-adress-text {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.24;
+   color: #1d1d1d;
+}
+.cabinet-btns-change {
+   margin-top: 72px;
+   display: flex;
+   gap: 24px;
+
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 1.24;
+   letter-spacing: 0.01em;
+   color: #fff;
+}
+.cabinet-change-btn {
+   background: #ff5151;
+   border-radius: 24px;
+   padding: 16px 32px 18px 32px;
+}
+.cabinet-change-pass-btn {
+   background: #6d7762;
+   border-radius: 24px;
+   padding: 16px 32px 18px 32px;
+}
 .coral {
    color: #ff5151;
 }
