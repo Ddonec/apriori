@@ -2521,3 +2521,6 @@ div.cs-last {
 .none {
    display: none;
 }
+.pointer {
+   cursor: pointer;
+}
