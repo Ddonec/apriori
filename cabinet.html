@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="./css/fonts.css" />
+      <link rel="stylesheet" href="./css/default.css" />
+      <link rel="stylesheet" href="./css/main.css" />
+      <link rel="stylesheet" href="./css/media.css" />
+   </head>
+   <body>
+      <header class="product-header">
+         <nav class="home-nav-menu">
+            <div class="burger-btn">
+               <img class="svg-class" src="./assets/icon/nav-btn-dark.svg" alt="" />
+            </div>
+            <div class="logo-icon">
+               <img src="./assets/icon/Logo_Apriori-dark.svg" alt="" />
+            </div>
+            <ul class="nav-buttons">
+               <li><img src="./assets/icon/nav-1-dark.svg" alt="" /></li>
+               <li><img src="./assets/icon/nav-2-dark.svg" alt="" /></li>
+               <li><img src="./assets/icon/nav-3-dark.svg" alt="" /></li>
+               <li><img src="./assets/icon/nav-4-dark.svg" alt="" /></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <section class="booking-section section-default">
+            <div class="bread-crumbs">
+               <a href="">Главная</a>
+               <span>|</span>
+               <a href="">Корзина</a>
+               <span>:</span>
+            </div>
+            <h1 class="title-home title-no-home">Личный кабинет</h1>
+            <div class="cabinet-tabs">
+               <p class="cabinet-tab active">Профиль</p>
+               <p class="cabinet-tab">Заказы</p>
+               <p class="cabinet-tab">Бонусы</p>
+            </div>
+            <div class="cabinet-zone cabinet-tab-1 none">
+               <div class="basket">
+                  <h3 class="basket_title">Ваш профиль</h3>
+                  <form class="booking-form" action="">
+                     <input type="text" class="booking-form_input b-f-i-1" placeholder="Ваше имя" />
+                     <input type="text" class="booking-form_input b-f-i-2" placeholder="Ваша фамилия" />
+                     <input type="text" class="booking-form_input b-f-i-3 no-need" placeholder="Отчество (Не обязательно)" />
+                     <input type="email" class="booking-form_input b-f-i-4" placeholder="Email" />
+                     <input type="tel" class="booking-form_input b-f-i-5" placeholder="Телефон" />
+                     <input type="number" class="booking-form_input b-f-i-6" placeholder="Дата рождения" />
+                  </form>
+                  <div class="cabinet-adress-box">
+                     <h3 class="basket_title">Адрес доставки</h3>
+                     <div class="add-adress-box">
+                        <div class="basket-btn_minus"></div>
+                        <span class="add-adress-text">Добавить адрес</span>
+                     </div>
+                  </div>
+                  <div class="cabinet-form-column">
+                     <form class="cabinet-form" action="">
+                        <input type="text" class="booking-form_input b-f-i-1" placeholder="Город / Населенный пункт " />
+                        <input type="text" class="booking-form_input b-f-i-2" placeholder="Улица и дом" />
+                        <input type="text" class="booking-form_input b-f-i-3 no-need" placeholder="Квартира / Офис (Не обязательно)" />
+                     </form>
+                     <div class="you-owner-check adress">
+                        <input type="checkbox" id="toggle-checkbox" />
+                        <label class="label-for-toggle-checkbox" for="toggle-checkbox">
+                           <span>Да</span> <span>Нет</span>
+                           <div class="toggle-checkbox-switcher">Да</div>
+                        </label>
+                        <p>Оставить адрес по умолчанию</p>
+                     </div>
+                     <div class="approve-box">
+                        <input id="approve-input" type="checkbox" />
+                        <label class="approve-input-label" for="approve-input"></label>
+                        <p class="approve-text">Я даю согласие на обработку своих <a class="coral" href="">персональных данных</a></p>
+                     </div>
+                  </div>
+                  <div class="cabinet-btns-change">
+                     <div class="cabinet-change-btn">Редактировать данные</div>
+                     <div class="cabinet-change-pass-btn">Изменить пароль</div>
+                  </div>
+               </div>
+               <div class="basket-summ">
+                  <h3 class="basket_title">Ваш кешбэк</h3>
+                  <div class="cashback-listener">
+                     <div class="cashback-listener_values">
+                        <p>0<span>%</span></p>
+                        <p class="bold">3<span>%</span></p>
+                        <p>8<span>%</span></p>
+                        <p>12<span>%</span></p>
+                     </div>
+                     <div class="cashback-listener_level">
+                        <div class="cashback_level__status-bar"></div>
+                     </div>
+                  </div>
+                  <div class="bonus-card" style="background-image: url(./assets/icon/bonus-card.svg)">
+                     <p class="bonus-card_value">Кешбэк 3<span>%</span></p>
+                     <p class="bonus-card_name">Konstantin К.</p>
+                  </div>
+                  <div class="cabinet-block">
+                     <p class="summ-title">Статистика</p>
+                     <div class="summ-block_row">
+                        <p class="block_row__value">Заказы</p>
+                        <p class="block_row__price">5 <span>шт.</span></p>
+                     </div>
+                     <div class="summ-block_row">
+                        <p class="block_row__value">Товары</p>
+                        <p class="block_row__price">9 <span>шт.</span></p>
+                     </div>
+                     <div class="summ-block_row">
+                        <p class="block_row__value">Подарки</p>
+                        <p class="block_row__price">1 <span>шт.</span></p>
+                     </div>
+                  </div>
+                  <div class="gray-line">
+                     <img class="opacity" src="./assets/icon/gray-circle.svg" alt="" />
+                     <div class="gray-line_line-24"></div>
+                  </div>
+
+                  <p class="product-box__price___price-old opacity total-summ-old">186 900 ₽</p>
+                  <div class="summ-block_row summ-total-row">
+                     <p class="summ-title">Итог :</p>
+                     <p class="block_row__price">147 880 <span>₽</span></p>
+                  </div>
+                  <p class="summ-block_discr cashback-info">Как работает кешбэк? <img src="./assets/icon/coral-quest.svg" alt="" /></p>
+               </div>
+            </div>
+            <div class="cabinet-zone cabinet-tab-2">
+               <div class="orders">
+                  <h3 class="basket_title">Список ваших заказов</h3>
+                  <div class="orders-tabs">
+                     <p class="orders-tab active">Все</p>
+                     <p class="orders-tab">Выполнен</p>
+                     <p class="orders-tab">Отменен</p>
+                     <p class="orders-tab">Возврат</p>
+                     <p class="orders-tab">Не оформлен</p>
+                     <p class="orders-tab">Оплачен</p>
+                     <p class="orders-tab">Выполняется</p>
+                  </div>
+                  <div class="orders-period">
+                     <input type="date" id="order-period-start" />
+                     <input type="date" id="order-period-end" />
+                     <img src="./assets/icon/coral-search.svg" alt="" />
+                  </div>
+                  <ul class="order-list">
+                     <li class="order-list-item-1">Заказы</li>
+                     <li class="order-list-item-2">Кол-во</li>
+                     <li class="order-list-item-3">Стоимость</li>
+                     <li class="order-list-item-4">Рубли</li>
+                     <li class="order-list-item-5">Статус</li>
+                     <li class="order-list-item-6">События</li>
+                     <li class="order-list-item-7">Дата операции</li>
+                  </ul>
+                  <div class="gray-line">
+                     <img class="opacity" src="./assets/icon/gray-circle.svg" alt="" />
+                     <div class="gray-line_line-24"></div>
+                  </div>
+                  <div class="orders-data">
+                     <ul class="order-item">
+                        <li class="order-list-item-1">№ 200285 77 90</li>
+                        <li class="order-list-item-2">× 5</li>
+                        <li class="order-list-item-3">60 900</li>
+                        <li class="order-list-item-4">₽</li>
+                        <li class="order-list-item-5">Выполняется</li>
+                        <li class="order-list-item-6"><img src="./assets/icon/Danger-blk.svg" alt="" />Доставка заказа 12.01.2024</li>
+                        <li class="order-list-item-7">10.01.2024</li>
+                     </ul>
+                     <ul class="order-item">
+                        <li class="order-list-item-1">№ 200285 77 90</li>
+                        <li class="order-list-item-2">× 1</li>
+                        <li class="order-list-item-3">900</li>
+                        <li class="order-list-item-4">₽</li>
+                        <li class="order-list-item-5">Выполнен</li>
+                        <li class="order-list-item-6"><img src="./assets/icon/Danger-coral.svg" alt="" /> Возврат № 73272 от 19.07.2023</li>
+                        <li class="order-list-item-7">08.07.2023</li>
+                     </ul>
+                     <ul class="order-item">
+                        <li class="order-list-item-1">№ 200285 77 90</li>
+                        <li class="order-list-item-2">× 2</li>
+                        <li class="order-list-item-3">77 980</li>
+                        <li class="order-list-item-4">₽</li>
+                        <li class="order-list-item-5 coral">Отменен</li>
+                        <li class="order-list-item-6"></li>
+                        <li class="order-list-item-7">02.04.2023</li>
+                     </ul>
+                     <ul class="order-item">
+                        <li class="order-list-item-1">№ 200285 77 90</li>
+                        <li class="order-list-item-2">× 1</li>
+                        <li class="order-list-item-3">2 100</li>
+                        <li class="order-list-item-4">₽</li>
+                        <li class="order-list-item-5">Выполнен</li>
+                        <li class="order-list-item-6"></li>
+                        <li class="order-list-item-7">16.02.2023</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="cabinet-zone cabinet-tab-3 none">
+               <div class="cabinet">
+                  <h3 class="basket_title">Как работает бонусная система</h3>
+                  <p class="bonus-info-subt">Вы получаете кешбэк с каждой покупки</p>
+                  <p class="bonus-info-disc">Уже с первой покупки вы получаете 3% кешбэк на свой бонусный счет. Ими можно оплатить до 50% суммы следующей покупки.</p>
+                  <p class="bonus-info-subt">Действует эффект накопления</p>
+                  <p class="bonus-info-disc">
+                     Все ваши покупки суммируются. Когда накапливается 30 000 ₽, то кешбэк увеличивается до 5%, при сумме 60 000 ₽ — кешбэк будет уже 8%. При сумме 150.000 ₽  — 12%
+                  </p>
+               </div>
+               <div class="basket-summ">
+                  <h3 class="basket_title">Ваш кешбэк</h3>
+                  <div class="cashback-listener">
+                     <div class="cashback-listener_values">
+                        <p>0<span>%</span></p>
+                        <p class="bold">3<span>%</span></p>
+                        <p>8<span>%</span></p>
+                        <p>12<span>%</span></p>
+                     </div>
+                     <div class="cashback-listener_level">
+                        <div class="cashback_level__status-bar"></div>
+                     </div>
+                  </div>
+                  <div class="bonus-card" style="background-image: url(./assets/icon/bonus-card.svg)">
+                     <p class="bonus-card_value">Кешбэк 3<span>%</span></p>
+                     <p class="bonus-card_name">Konstantin К.</p>
+                  </div>
+                  <div class="cabinet-block">
+                     <p class="summ-title">Статистика</p>
+                     <div class="summ-block_row">
+                        <p class="block_row__value">Заказы</p>
+                        <p class="block_row__price">5 <span>шт.</span></p>
+                     </div>
+                     <div class="summ-block_row">
+                        <p class="block_row__value">Товары</p>
+                        <p class="block_row__price">9 <span>шт.</span></p>
+                     </div>
+                     <div class="summ-block_row">
+                        <p class="block_row__value">Подарки</p>
+                        <p class="block_row__price">1 <span>шт.</span></p>
+                     </div>
+                  </div>
+                  <div class="gray-line">
+                     <img class="opacity" src="./assets/icon/gray-circle.svg" alt="" />
+                     <div class="gray-line_line-24"></div>
+                  </div>
+
+                  <p class="product-box__price___price-old opacity total-summ-old">186 900 ₽</p>
+                  <div class="summ-block_row summ-total-row">
+                     <p class="summ-title">Итог :</p>
+                     <p class="block_row__price">147 880 <span>₽</span></p>
+                  </div>
+                  <p class="summ-block_discr cashback-info">Как работает кешбэк? <img src="./assets/icon/coral-quest.svg" alt="" /></p>
+               </div>
+            </div>
+         </section>
+
+         <section class="section-default section-m-50">
+            <h2 class="h2-section mb">Просмотренные товары</h2>
+         </section>
+         <div class="viewed-products-overflow-container">
+            <div class="viewed-products-container catalog-viewed">
+               <div class="viewed-product">
+                  <img class="viewed-product_img" src="./assets/content/viewed-product-1.png" alt="" />
+                  <p class="viewed-product_name">Зеркало Шахерезада 99 см Настенное</p>
+                  <div class="viewed-product_price">
+                     <p class="viewed-product_price-main">38 900 <span>₽</span></p>
+                     <p class="viewed-product_price-sub"></p>
+                  </div>
+                  <div class="viewed-product_discont-value none"></div>
+               </div>
+               <div class="viewed-product">
+                  <img class="viewed-product_img" src="./assets/content/viewed-product-2.png" alt="" />
+                  <p class="viewed-product_name">Зеркало Лучи солнца 89 см Золотое</p>
+                  <div class="viewed-product_price">
+                     <p class="viewed-product_price-main">45 900 <span>₽</span></p>
+                     <p class="viewed-product_price-sub"></p>
+                  </div>
+                  <div class="viewed-product_discont-value none">%</div>
+               </div>
+               <div class="viewed-product">
+                  <img class="viewed-product_img" src="./assets/content/viewed-product-3.png" alt="" />
+                  <p class="viewed-product_name">Тарелка декоративная 41 см 4 вида</p>
+                  <div class="viewed-product_price">
+                     <p class="viewed-product_price-main">11 500 <span>₽</span></p>
+                     <p class="viewed-product_price-sub">9200 ₽</p>
+                  </div>
+                  <div class="viewed-product_discont-value">-25%</div>
+               </div>
+               <div class="viewed-product">
+                  <img class="viewed-product_img" src="./assets/content/viewed-product-4.png" alt="" />
+                  <p class="viewed-product_name">Лампа настольная Розовый Зефир 63 см</p>
+                  <div class="viewed-product_price">
+                     <p class="viewed-product_price-main">29 800 <span>₽</span></p>
+                     <p class="viewed-product_price-sub"></p>
+                  </div>
+                  <div class="viewed-product_discont-value none"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer>
+         <div class="footer_left-side">
+            <img src="./assets/icon/Logo_Apriori.svg" alt="" style="width: 182px" />
+            <div class="footer_discription">
+               <p><span class="footer_bold-text">APRIORI DESIGN</span> © Все права защищены 2022 — 2023</p>
+               <p>Cтоимость и условия приобретения товара действительны на текущую дату</p>
+            </div>
+         </div>
+         <div class="footer_rignt-side">
+            <img class="footer-less-600 none" src="./assets/icon/Logo_Apriori.svg" alt="" style="width: 182px" />
+            <div class="footer_rignt__ul-box">
+               <h5 class="footer-title">Интернет-магазин</h5>
+               <ul class="footer-u-list">
+                  <li><a href="">Акции</a></li>
+                  <li><a href="">Все товары</a></li>
+                  <li><a href="">Лояльность</a></li>
+                  <li><a href="">Доставка и оплата</a></li>
+                  <li><a href="">Новости</a></li>
+               </ul>
+            </div>
+            <div class="footer_rignt__ul-box">
+               <h5 class="footer-title">Сервис</h5>
+               <ul class="footer-u-list">
+                  <li><a href="">Помощь</a></li>
+                  <li><a href="">Обратная связь</a></li>
+                  <li><a href="">Адрес магазина</a></li>
+                  <li><a href="">Публичная оферта</a></li>
+               </ul>
+            </div>
+            <div class="line-into-block-footer">
+               <img class="line-into-block-footer_img" src="./assets/icon/Rectangle 1860.svg" alt="" />
+               <p class="line_line"></p>
+            </div>
+            <div class="footer_rignt__ul-box">
+               <h5 class="footer-title">Контакты</h5>
+               <ul class="footer-u-list">
+                  <li class="footer-tel"><a href="tel:+79137995306">+7 (913) 799-53-06</a></li>
+                  <li><a href="mailto:info@aprioridecor.ru">info@aprioridecor.ru</a></li>
+               </ul>
+            </div>
+            <div class="footer_rignt__ul-box">
+               <h5 class="footer-title">Компания</h5>
+               <ul class="footer-u-list">
+                  <li><a href="">О нас</a></li>
+                  <li><a href="">Сотрудничество</a></li>
+                  <li><a href="">Проект для вас</a></li>
+                  <li><a href="">Вакансии</a></li>
+               </ul>
+            </div>
+            <ul class="footer-social-webs">
+               <li>
+                  <a href=""><img src="./assets/icon/footer-whatsup.svg" alt="" /></a>
+               </li>
+               <li>
+                  <a href=""><img src="./assets/icon/footer-tg.svg" alt="" /></a>
+               </li>
+               <li>
+                  <a href=""><img src="./assets/icon/footer-ig.svg" alt="" /></a>
+               </li>
+               <li>
+                  <a href=""><img src="./assets/icon/footer-vk.svg" alt="" /></a>
+               </li>
+            </ul>
+            <ul class="footer-payment">
+               <li>
+                  <a href=""><img src="./assets/icon/Mastercard.svg" alt="" /></a>
+               </li>
+               <li>
+                  <a href=""><img src="./assets/icon/Visa.svg" alt="" /></a>
+               </li>
+               <li>
+                  <a href=""><img src="./assets/icon/MIR.svg" alt="" /></a>
+               </li>
+            </ul>
+            <div class="footer_discription footer-less-600 none">
+               <p><span class="footer_bold-text">APRIORI DESIGN</span> © Все права защищены 2022 — 2023</p>
+               <p>Cтоимость и условия приобретения товара действительны на текущую дату</p>
+            </div>
+         </div>
+      </footer>
+   </body>
+   <script src="./js/booking.js"></script>
+   <script src="./js/cabinet-tabs.js"></script>
+</html>
