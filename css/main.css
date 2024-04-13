@@ -2506,6 +2506,52 @@ div.cs-last {
    gap: 24px;
 }
 
+/* nav hidden menu  */
+
+.hidden-nav-menu {
+   display: flex;
+   justify-content: space-between;
+   background-color: #f7efe4;
+   margin-top: 50px;
+}
+.nav-list {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   width: 25%;
+   margin-bottom: 176px;
+}
+.nav-list-title {
+   margin-bottom: 8px;
+   font-family: "Neutral Face", sans-serif;
+   font-weight: 400;
+   font-size: 32px;
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   color: #181818;
+}
+.nav-list-list {
+   font-family: "Inter", sans-serif;
+   font-weight: 300;
+   font-size: 20px;
+   text-transform: uppercase;
+   color: #181818;
+}
+.nav-list a {
+   color: unset;
+   text-decoration: none;
+}
+.nav-list_social-list {
+   display: flex;
+   gap: 32px;
+}
+.burger-nav-menu {
+   padding-top: 32px;
+   position: fixed;
+   top: -110%;
+   left: 56px;
+   width: 100%;
+}
 /*  */
 
 /* */
