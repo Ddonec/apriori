@@ -1604,7 +1604,21 @@ div.cs-last {
    line-height: 1.24;
    color: #1d1d1d;
 
+   transition: 0.6s ease;
+   display: grid;
    margin: 16px 0 24px;
+}
+.right-p-p_price-discription_hide.active {
+   height: fit-content;
+   opacity: 1;
+   transition: 0.6s ease;
+}
+.right-p-p_price-discription_hide {
+   height: 0;
+   opacity: 0;
+}
+.right-p-p_show-more-img {
+   transition: 0.6s ease;
 }
 .right-p-p_price-show-more {
    display: flex;
@@ -1621,6 +1635,7 @@ div.cs-last {
    font-size: 16px;
    line-height: 1.24;
    color: #6d7762;
+   z-index: 10;
 }
 .right-p-p_show-more-btn p {
    flex-shrink: 0;
