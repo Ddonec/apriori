@@ -25,6 +25,12 @@
    .basket-summ {
       width: 100%;
    }
+   .cabinet {
+      width: 100%;
+   }
+   .cabinet-bonus-itog {
+      max-width: 600px;
+   }
 }
 @media (max-width: 1400px) {
    h1,
@@ -460,6 +466,10 @@
    .cabinet-adress-box {
       flex-wrap: wrap;
       margin: 50px 0 20px;
+   }
+   .cabinet-bonus-itog {
+      max-width: unset;
+      width: 100%;
    }
 }
 
