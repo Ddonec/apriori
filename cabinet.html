@@ -196,19 +196,24 @@
             <div class="cabinet-zone cabinet-tab-2 none">
                <div class="orders">
                   <h3 class="basket_title">Список ваших заказов</h3>
-                  <div class="orders-tabs">
-                     <p class="orders-tab pointer active">Все</p>
-                     <p class="orders-tab pointer">Выполнен</p>
-                     <p class="orders-tab pointer">Отменен</p>
-                     <p class="orders-tab pointer">Возврат</p>
-                     <p class="orders-tab pointer">Не оформлен</p>
-                     <p class="orders-tab pointer">Оплачен</p>
-                     <p class="orders-tab pointer">Выполняется</p>
+                  <div class="orders-tabs-overflow">
+                     <div class="orders-tabs">
+                        <p class="orders-tab pointer active">Все</p>
+                        <p class="orders-tab pointer">Выполнен</p>
+                        <p class="orders-tab pointer">Отменен</p>
+                        <p class="orders-tab pointer">Возврат</p>
+                        <p class="orders-tab pointer">Не оформлен</p>
+                        <p class="orders-tab pointer">Оплачен</p>
+                        <p class="orders-tab pointer">Выполняется</p>
+                     </div>
                   </div>
+
                   <div class="orders-period">
                      <input type="date" id="order-period-start" />
                      <input type="date" id="order-period-end" />
-                     <img src="./assets/icon/coral-search.svg" class="pointer" alt="" />
+                     <div class="img-search-order_btn">
+                        <img class="img-search-order" src="./assets/icon/coral-search.svg" class="pointer" alt="" />
+                     </div>
                   </div>
                   <ul class="order-list">
                      <li class="order-list-item-1">Заказы</li>
