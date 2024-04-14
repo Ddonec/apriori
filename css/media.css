@@ -48,6 +48,9 @@
    .footer_rignt-side {
       width: 77%;
    }
+   .nav-list {
+      width: unset;
+   }
 }
 
 @media (max-width: 1300px) {
@@ -137,6 +140,13 @@
    .collection-things-box {
       flex-wrap: wrap;
       gap: 20px;
+   }
+   .hidden-nav-menu {
+      flex-wrap: wrap;
+   }
+   .nav-list {
+      width: 50%;
+      margin-bottom: 50px;
    }
 }
 @media (max-width: 1000px) {
@@ -235,6 +245,42 @@
    }
    .catalog-viewed {
       margin: 0 15px;
+   }
+   .nav-list {
+      width: 100%;
+      margin: 0;
+      height: 20px;
+      overflow: hidden;
+      transition: 0.6s ease;
+   }
+   .nav-list-title::after {
+      content: "";
+      display: block;
+      width: 21px;
+      height: 21px;
+      background-image: url(../assets/icon/drop-arrow-brown.svg);
+      background-position: bottom;
+      background-size: cover;
+      transition: 0.3s ease;
+   }
+   .nav-list.active > .nav-list-title::after {
+      transform: rotate(180deg);
+   }
+   .nav-list.active {
+      height: fit-content;
+   }
+   .hidden-nav-menu {
+      flex-direction: column;
+      padding-bottom: 120px;
+   }
+   .nav-list-title {
+      font-size: 20px;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+   }
+   .hidden-nav-menu {
+      gap: 24px;
    }
 }
 @media (max-width: 800px) {
@@ -387,6 +433,12 @@
    }
    .exclusive-point::after {
       display: none;
+   }
+   .hidden-nav-menu {
+      margin-top: 80px;
+   }
+   .burger-nav-menu {
+      padding: 32px 16px 0;
    }
 }
 
