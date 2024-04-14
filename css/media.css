@@ -276,6 +276,13 @@
    .buttons-block {
       display: flex;
    }
+   .form-booking-title {
+      font-size: 22px;
+   }
+   .booking-form {
+      margin-top: 20px;
+      gap: 10px;
+   }
 }
 @media (max-width: 1000px) {
    .video-preview {
@@ -429,6 +436,13 @@
    .filter-buttons {
       display: flex;
    }
+   .b-f-i-1,
+   .b-f-i-2,
+   .b-f-i-3,
+   .b-f-i-4,
+   .b-f-i-5 {
+      width: 100%;
+   }
 }
 
 @media (max-width: 600px) {
@@ -567,6 +581,10 @@
    }
    .burger-nav-menu {
       padding: 32px 16px 0;
+   }
+   .basket,
+   .basket-summ {
+      padding: 20px 15px;
    }
 }
 
