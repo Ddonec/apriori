@@ -440,8 +440,26 @@
    .b-f-i-2,
    .b-f-i-3,
    .b-f-i-4,
-   .b-f-i-5 {
+   .b-f-i-5,
+   .b-f-i-6 {
       width: 100%;
+   }
+   .cabinet-btns-change {
+      font-size: 16px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      gap: 10px;
+   }
+   .cabinet-btns-change > div {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+   }
+   .cabinet-adress-box {
+      flex-wrap: wrap;
+      margin: 50px 0 20px;
    }
 }
 
@@ -449,10 +467,12 @@
    h1 {
       font-size: 30px;
    }
-   .home-header {
+   .home-header,
+   .product-header {
       padding: 32px 15px;
    }
-   .subtitle-home {
+   .subtitle-home,
+   .cabinet-tabs {
       font-size: 16px;
    }
    .h2-section {
@@ -585,6 +605,19 @@
    .basket,
    .basket-summ {
       padding: 20px 15px;
+   }
+   .add-adress-box {
+      width: 100%;
+      margin-top: 20px;
+   }
+   .bonus-card_value {
+      font-size: 41px;
+   }
+   .bonus-card_name {
+      font-size: 20px;
+   }
+   .you-owner-check {
+      font-size: 14px;
    }
 }
 
