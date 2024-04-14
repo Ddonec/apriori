@@ -710,6 +710,9 @@ h1 {
    width: 100%;
    overflow-x: scroll;
 }
+.viewed-products-overflow-container::-webkit-scrollbar {
+   display: none;
+}
 .viewed-products-container {
    display: flex;
    gap: 24px;
@@ -2255,6 +2258,7 @@ div.cs-last {
    width: 24px;
    height: 24px;
    background: #f8f3ed;
+   flex-shrink: 0;
 }
 .approve-text {
    font-family: "Inter", sans-serif;
@@ -2277,6 +2281,7 @@ div.cs-last {
    justify-content: space-between;
    width: calc(100% / 3 * 2 - 8px);
    margin: 39px 0 37px;
+   align-items: center;
 }
 .add-adress-box {
    display: flex;
@@ -2392,6 +2397,7 @@ div.cs-last {
 .cabinet-tabs {
    width: 100%;
    display: flex;
+   margin-top: 20px;
 
    font-family: "Inter", sans-serif;
    font-weight: 400;

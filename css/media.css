@@ -25,6 +25,12 @@
    .basket-summ {
       width: 100%;
    }
+   .cabinet {
+      width: 100%;
+   }
+   .cabinet-bonus-itog {
+      max-width: 600px;
+   }
 }
 @media (max-width: 1400px) {
    h1,
@@ -276,6 +282,13 @@
    .buttons-block {
       display: flex;
    }
+   .form-booking-title {
+      font-size: 22px;
+   }
+   .booking-form {
+      margin-top: 20px;
+      gap: 10px;
+   }
 }
 @media (max-width: 1000px) {
    .video-preview {
@@ -410,6 +423,107 @@
    .hidden-nav-menu {
       gap: 24px;
    }
+   .orders-tabs-overflow {
+      overflow-x: scroll;
+      width: 100%;
+   }
+   .orders-tabs-overflow::-webkit-scrollbar {
+      display: none;
+   }
+   .orders-tabs {
+      margin: 20px 0;
+      border-radius: 10px;
+      width: max-content;
+   }
+   .orders-tab {
+      flex-shrink: 0;
+      border-radius: 10px;
+   }
+}
+@media (max-width: 900px) {
+   .order-list {
+      display: none;
+   }
+   .order-item {
+      flex-direction: column;
+      align-items: start;
+      position: relative;
+      gap: 10px;
+   }
+   .order-item > li {
+      width: 100%;
+      max-width: unset;
+      text-align: right;
+      display: flex;
+      font-size: 14px;
+   }
+   .order-item .order-list-item-3 {
+      font-size: 14px;
+   }
+
+   .order-list-item-1::before {
+      content: "Заказы";
+      margin-right: auto;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+   }
+   .order-list-item-2::before {
+      content: "Кол-во";
+      margin-right: auto;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+   }
+   .order-list-item-3::before {
+      content: "Стоимость";
+      margin-right: auto;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+   }
+   .order-list-item-4::before {
+      content: "Валюта";
+      margin-right: auto;
+      display: block;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+   }
+   .order-list-item-5::before {
+      content: "Статус";
+      margin-right: auto;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+   }
+   .order-list-item-6::before {
+      content: "События";
+      margin-right: auto;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+   }
+   .order-list-item-7::before {
+      content: "Дата операции";
+      margin-right: auto;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+   }
+   .orders-data {
+      gap: 40px;
+   }
+   .orders-data > ul:not(:last-child)::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: #b1b1b1;
+      left: 0;
+      bottom: -20px;
+   }
 }
 @media (max-width: 800px) {
    .parent {
@@ -429,16 +543,47 @@
    .filter-buttons {
       display: flex;
    }
+   .b-f-i-1,
+   .b-f-i-2,
+   .b-f-i-3,
+   .b-f-i-4,
+   .b-f-i-5,
+   .b-f-i-6 {
+      width: 100%;
+   }
+   .cabinet-btns-change {
+      font-size: 16px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      gap: 10px;
+   }
+   .cabinet-btns-change > div {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+   }
+   .cabinet-adress-box {
+      flex-wrap: wrap;
+      margin: 50px 0 20px;
+   }
+   .cabinet-bonus-itog {
+      max-width: unset;
+      width: 100%;
+   }
 }
 
 @media (max-width: 600px) {
    h1 {
       font-size: 30px;
    }
-   .home-header {
+   .home-header,
+   .product-header {
       padding: 32px 15px;
    }
-   .subtitle-home {
+   .subtitle-home,
+   .cabinet-tabs {
       font-size: 16px;
    }
    .h2-section {
@@ -567,6 +712,54 @@
    }
    .burger-nav-menu {
       padding: 32px 16px 0;
+   }
+   .basket,
+   .basket-summ {
+      padding: 20px 15px;
+   }
+   .add-adress-box {
+      width: 100%;
+      margin-top: 20px;
+   }
+   .bonus-card_value {
+      font-size: 41px;
+   }
+   .bonus-card_name {
+      font-size: 20px;
+   }
+   .you-owner-check {
+      font-size: 14px;
+   }
+   .orders-period {
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0 30px;
+   }
+   #order-period-start,
+   #order-period-end {
+      width: 100%;
+      max-width: unset;
+      border-radius: 10px;
+   }
+
+   .img-search-order_btn::after {
+      content: "Искать";
+      display: block;
+      color: #fff;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.24;
+      letter-spacing: 0.01em;
+   }
+   .img-search-order_btn {
+      width: 100%;
+      background: #ff5151;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
    }
 }
 
