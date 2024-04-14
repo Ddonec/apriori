@@ -9,7 +9,6 @@ function toggleProductDisc() {
    } else {
       menu.classList.toggle("active");
       img.style.transform = "rotate(180deg)";
-      text.textContent = "Скрыть полное описание";
-
+      text.textContent = "Скрыть описание";
    }
 }
