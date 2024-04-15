@@ -572,6 +572,17 @@
       max-width: unset;
       width: 100%;
    }
+   .accordion__header {
+      font-size: 16px;
+      padding: 12px 0;
+   }
+   .accordion__content {
+      font-size: 14px;
+      padding-top: 20px;
+   }
+   footer {
+      margin-top: 50px;
+   }
 }
 
 @media (max-width: 600px) {
