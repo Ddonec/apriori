@@ -1,6 +1,16 @@
+const greyBg = document.querySelector(".grey-bg");
+
 function toggleMenu() {
    const menu = document.querySelector(".burger-nav-menu");
-   menu.classList.toggle("active");
+   if (menu.classList.contains("active")) {
+      menu.classList.remove("active");
+      greyBg.style.display = "none";
+      document.body.style.overflow = "unset";
+   } else {
+      menu.classList.add("active");
+      greyBg.style.display = "block";
+      document.body.style.overflow = "hidden";
+   }
 }
 
 function toggleNav() {
