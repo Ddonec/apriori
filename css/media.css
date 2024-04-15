@@ -71,6 +71,17 @@
    .nav-list {
       width: unset;
    }
+   .right-p-p_control__text {
+      margin: 0;
+   }
+   .right-p-p_control__to-cart {
+      font-size: 16px;
+      background: #fe621d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+   }
 }
 
 @media (max-width: 1300px) {
@@ -292,6 +303,26 @@
       margin-top: 20px;
       gap: 10px;
    }
+   .p-p-section {
+      flex-direction: column;
+   }
+   .right-p-p,
+   .dscription-p-p,
+   .left-p-p,
+   .left-p-p-overflow {
+      width: 100%;
+   }
+   .product-box__text-box___title,
+   .product-box__price___price {
+      font-size: 16px;
+   }
+   .product-box__text-box___subtitle,
+   .product-box__price___price span {
+      font-size: 14px;
+   }
+   .dscription-p-p_text__title {
+      font-size: 25px;
+   }
 }
 @media (max-width: 1000px) {
    .video-preview {
@@ -446,6 +477,16 @@
       border-radius: 10px;
    }
    .section-default-home {
+      margin-top: 50px;
+   }
+   .p-p-section-2 {
+      flex-direction: column;
+   }
+   .more-products-interior,
+   .product-interior-main-img {
+      width: 100%;
+   }
+   .p-p-section-2 {
       margin-top: 50px;
    }
 }
@@ -647,6 +688,32 @@
       display: flex;
       align-items: center;
       gap: 10px;
+   }
+   .right-p-p_price-title,
+   .right-p-p_in-stock,
+   .dscription-p-p_tabs,
+   .dscription-p-p_text__info-block {
+      font-size: 16px;
+   }
+   .right-p-p_price-value {
+      font-size: 25px;
+   }
+   .right-p-p_price-discription,
+   .right-p-p_show-more-btn {
+      font-size: 14px;
+   }
+   .dscription-p-p_text__info-block {
+      gap: 10px;
+   }
+   .gray-line {
+      margin: 20px 0;
+   }
+   .dscription-p-p_text__title {
+      font-size: 24px;
+      margin-bottom: 20px;
+   }
+   .dscription-p-p_text__info-block {
+      margin: 20px 0 3px;
    }
 }
 
@@ -893,6 +960,22 @@
    }
    .control-panel-reviews {
       display: none;
+   }
+   .left-p-p {
+      flex-wrap: nowrap;
+      width: max-content;
+      gap: 5px;
+   }
+   .left-p-p-overflow::-webkit-scrollbar {
+      display: none;
+   }
+   .left-p-p-overflow {
+      overflow-x: scroll;
+      width: calc(100% + 15px);
+   }
+   .product-page-photo,
+   .product-page-main-photo {
+      width: 360px;
    }
 }
 

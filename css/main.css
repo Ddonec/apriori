@@ -722,12 +722,16 @@ h1 {
    cursor: pointer;
    margin-top: 20px;
 }
-
+.dscription-p-p_tabs-overflow {
+   width: 100%;
+   overflow-x: scroll;
+}
 .viewed-products-overflow-container {
    width: 100%;
    overflow-x: scroll;
 }
-.viewed-products-overflow-container::-webkit-scrollbar {
+.viewed-products-overflow-container::-webkit-scrollbar,
+.dscription-p-p_tabs-overflow::-webkit-scrollbar {
    display: none;
 }
 .viewed-products-container {
@@ -1500,8 +1504,10 @@ div.cs-last {
    display: flex;
    width: 100%;
 }
-.left-p-p {
+.left-p-p-overflow {
    width: calc(50% - 12px);
+}
+.left-p-p {
    display: flex;
    flex-wrap: wrap;
    gap: 24px;
@@ -1666,6 +1672,12 @@ div.cs-last {
    align-items: center;
    gap: 24px;
    margin-top: 40px;
+   flex-wrap: wrap;
+}
+.right-p-p-tg-container {
+   display: flex;
+   align-items: center;
+   gap: 24px;
 }
 .right-p-p_control__to-cart {
    font-family: "Inter", sans-serif;
@@ -1723,6 +1735,8 @@ div.cs-last {
 .dscription-p-p_tab {
    padding: 13px 24px;
    border-radius: 24px;
+   width: max-content;
+   flex-shrink: 0;
 }
 .dscription-p-p_tab.active {
    background-color: #fff;
