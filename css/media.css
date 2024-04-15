@@ -46,9 +46,9 @@
    .right-zone-review {
       width: calc(100% / 3 - 12px);
    }
-   .control-panel_pag-btns {
+   /* .control-panel_pag-btns {
       display: none;
-   }
+   } */
    .reviews-overflow-container {
       overflow-x: scroll;
    }
@@ -760,6 +760,41 @@
       align-items: center;
       justify-content: center;
       margin-top: 10px;
+   }
+   .product-card-image {
+      width: 360px;
+   }
+   .product-card_name,
+   .product-card_price {
+      font-size: 20px;
+   }
+   .product-card_price p {
+      font-size: 16px;
+   }
+   .product-card_subdiscr {
+      font-size: 14px;
+      margin-top: 8px;
+   }
+   .unactive,
+   .mouse-swipe-img {
+      display: none;
+   }
+
+   .control-panel_pag-btns {
+      width: 100%;
+      gap: 10px;
+      position: relative;
+   }
+   .control-panel_pag-btns {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+   }
+   .product-cards-container {
+      padding-right: 15px;
+   }
+   .control-panel_prev-btn {
+      margin: 0;
    }
 }
 
