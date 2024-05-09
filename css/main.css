@@ -417,6 +417,9 @@ h1 {
    overflow: hidden;
    width: fit-content;
 }
+.product-card:hover > .product-card_discription {
+   background: #fff888;
+}
 .product-card-image {
    display: flex;
    flex-direction: column;
