@@ -13,10 +13,16 @@
       <header class="home-header">
          <nav class="home-nav-menu">
             <div class="burger-btn" onclick="toggleMenu()">
-               <img class="svg-class" src="./assets/icon/Button (6).svg" alt="" />
+               <div class="burger-btn-desctop">
+                  <img class="svg-class" src="./assets/icon/Menu-3-lines-w-update.svg" alt="" />
+                  <p class="menu-text">Меню</p>
+               </div>
+               <div class="burger-btn-mob">
+                  <img src="./assets/icon/Button (6).svg" alt="" />
+               </div>
             </div>
             <div class="logo-icon">
-               <img src="./assets/icon/Logo_Apriori.svg" alt="" />
+               <img src="./assets/icon/logo-update-w.svg" alt="" />
             </div>
             <ul class="nav-buttons">
                <li><img src="./assets/icon/Button (5).svg" alt="" /></li>
@@ -47,7 +53,7 @@
          <nav class="burger-nav-menu">
             <!-- mt112 -->
             <nav class="home-nav-menu">
-               <div class="burger-btn" onclick="toggleMenu()">
+               <div class="burger-btn drop-btn" onclick="toggleMenu()">
                   <img class="svg-class" src="./assets/icon/nav-btn-dark.svg" alt="" />
                </div>
                <div class="logo-icon">
@@ -601,7 +607,7 @@
             </div>
          </div>
       </footer>
-      <div class="grey-bg"></div>
+      <div class="grey-bg" onclick="toggleMenu()"></div>
    </body>
    <script src="./js/index.js"></script>
    <script src="./js/home-scroll.js"></script>

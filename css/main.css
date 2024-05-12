@@ -16,6 +16,7 @@ body {
    list-style: none;
    display: flex;
    gap: 24px;
+   order: 2;
 }
 
 .home-nav-menu {
@@ -61,7 +62,21 @@ body {
 }
 
 .burger-btn {
-   margin-right: 216px;
+   /* margin-right: 216px; */
+   display: flex;
+   align-items: center;
+   order: 1;
+}
+.burger-btn-desctop {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.burger-btn-mob {
+   display: none;
+}
+.drop-btn {
+   display: none;
 }
 
 .title-box {
@@ -621,6 +636,12 @@ h1 {
    text-decoration: none;
    margin-top: 40px;
    display: block;
+}
+.menu-text {
+   font-size: 19px;
+   font-family: Inter;
+   color: #fff;
+   text-transform: uppercase;
 }
 .right-zone-review {
    width: calc(25% - 24px);
