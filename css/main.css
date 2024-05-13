@@ -4,6 +4,10 @@
    box-sizing: border-box;
 }
 
+header {
+   position: relative;
+}
+
 body {
    background: #f8f3ed;
 }
@@ -109,6 +113,18 @@ h1 {
 }
 .title-no-home {
    color: #000;
+}
+.header-slider-buttons {
+   display: flex;
+   gap: 20px;
+   position: absolute;
+   bottom: 48px;
+   right: 56px;
+}
+.header-slider-buttons_prev {
+   transform: rotate(180deg);
+}
+.header-slider-buttons_next {
 }
 
 .line {
