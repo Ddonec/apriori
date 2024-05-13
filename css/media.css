@@ -340,10 +340,19 @@
       margin-right: 14px;
    }
    .burger-btn {
-      order: 1;
+      order: 3;
       margin: 0;
    }
 
+   .burger-btn-desctop {
+      display: none;
+   }
+   .burger-btn-mob {
+      display: flex;
+   }
+   .drop-btn {
+      display: flex;
+   }
    .catalog-home-block-1 {
       width: 100%;
    }

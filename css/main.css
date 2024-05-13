@@ -4,6 +4,10 @@
    box-sizing: border-box;
 }
 
+header {
+   position: relative;
+}
+
 body {
    background: #f8f3ed;
 }
@@ -16,6 +20,7 @@ body {
    list-style: none;
    display: flex;
    gap: 24px;
+   order: 2;
 }
 
 .home-nav-menu {
@@ -61,7 +66,21 @@ body {
 }
 
 .burger-btn {
-   margin-right: 216px;
+   /* margin-right: 216px; */
+   display: flex;
+   align-items: center;
+   order: 1;
+}
+.burger-btn-desctop {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.burger-btn-mob {
+   display: none;
+}
+.drop-btn {
+   display: none;
 }
 
 .title-box {
@@ -95,6 +114,18 @@ h1 {
 .title-no-home {
    color: #000;
 }
+.header-slider-buttons {
+   display: flex;
+   gap: 20px;
+   position: absolute;
+   bottom: 48px;
+   right: 56px;
+}
+.header-slider-buttons_prev {
+   transform: rotate(180deg);
+}
+.header-slider-buttons_next {
+}
 
 .line {
    display: flex;
@@ -108,6 +139,10 @@ h1 {
    height: 1px;
    background: white;
    opacity: 0.5;
+}
+.footer-line_line {
+   background: #6c6050;
+   opacity: 1;
 }
 
 .video-preview {
@@ -215,7 +250,9 @@ h1 {
    display: flex;
    align-items: center;
 }
-
+.ramillas-footer {
+   font-family: "TT Ramillas Trl";
+}
 .catalog-home-blocks {
    display: flex;
    flex-wrap: wrap;
@@ -378,7 +415,7 @@ h1 {
    line-height: 1.375;
    text-align: center;
    color: #fff;
-   width: 65%;
+   /* width: 65%; */
    opacity: 0;
    height: 0;
    transition: 0.7s cubic-bezier(0.05, 0.6, 0.4, 0.9);
@@ -387,6 +424,7 @@ h1 {
    opacity: 1;
    height: auto;
    margin: 50px 0;
+   width: 65%;
    transition: 0.7s cubic-bezier(0.05, 0.6, 0.4, 0.9);
 }
 .panel_magic__show-collection {
@@ -622,6 +660,12 @@ h1 {
    margin-top: 40px;
    display: block;
 }
+.menu-text {
+   font-size: 19px;
+   font-family: Inter;
+   color: #fff;
+   text-transform: uppercase;
+}
 .right-zone-review {
    width: calc(25% - 24px);
 }
@@ -842,7 +886,7 @@ footer {
    height: 1080px;
 }
 .footer_left-side {
-   width: 50%;
+   width: 25%;
    background-image: url(../assets/content/footer-bg.png);
    background-size: cover;
 
@@ -853,8 +897,8 @@ footer {
    justify-content: space-between;
 }
 .footer_rignt-side {
-   width: 50%;
-   background: #6c6050;
+   width: 75%;
+   background: #e1e8e0;
    padding: 56px 32px;
    display: flex;
    flex-wrap: wrap;
@@ -865,21 +909,21 @@ footer {
    font-size: 12px;
    line-height: 1.33333;
    letter-spacing: 0em;
-   color: #fff;
+   color: #262626;
 }
 .footer_discription {
    font-family: "Inter", sans-serif;
    font-weight: 400;
    font-size: 12px;
    line-height: 1.33333;
-   color: rgba(255, 255, 255, 0.48);
+   /* color: rgba(255, 255, 255, 0.48); */
 }
 .footer-title {
    font-family: "TT Ramillas Trl", sans-serif;
    font-weight: 400;
    font-size: 24px;
    line-height: 1;
-   color: #fff;
+   color: #262626;
    margin-bottom: 48px;
 }
 .footer-u-list > li > a {
@@ -887,7 +931,7 @@ footer {
    font-weight: 400;
    font-size: 16px;
    line-height: 1.24;
-   color: #fff;
+   color: #262626;
    text-decoration: none;
 }
 .footer-u-list > li {
@@ -908,7 +952,7 @@ footer {
    font-weight: 400;
    font-size: 40px;
    line-height: 1;
-   color: #fff;
+   color: #262626;
 }
 /* 2-page */
 .h2-no-margin {
