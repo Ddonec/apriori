@@ -421,12 +421,13 @@ h1 {
    transition: 0.7s cubic-bezier(0.05, 0.6, 0.4, 0.9);
 }
 .panel.active .panel_magic__disc {
-   opacity: 1;
    height: auto;
    margin: 50px 0;
-   width: 65%;
+   width: 21vw;
    transition: 0.7s cubic-bezier(0.05, 0.6, 0.4, 0.9);
+   opacity: 1;
 }
+
 .panel_magic__show-collection {
    font-family: "Scotch Modern Display", sans-serif;
    font-weight: 400;
