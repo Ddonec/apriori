@@ -538,6 +538,9 @@ h1 {
    justify-content: space-between;
    margin-top: 32px;
 }
+.control-panel_pag-btns{
+   display: flex;
+}
 
 .control-panel_prev-btn,
 .control-panel_prev-btn-main {
