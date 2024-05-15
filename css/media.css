@@ -14,6 +14,9 @@
    .last-block-in-catalog-goods-home {
       width: calc(50% - 12px);
    }
+   .footer_rignt-side {
+      padding: 56px 32px;
+   }
 }
 @media (max-width: 1600px) {
    .basket {
@@ -325,6 +328,9 @@
    }
 }
 @media (max-width: 1000px) {
+   .footer_discription {
+      order: 1;
+   }
    .video-preview {
       display: none;
    }
@@ -760,6 +766,7 @@
    .footer_rignt-side .footer_discription {
       margin-top: 50px;
    }
+
    .footer-less-600 {
       display: block;
    }
@@ -985,6 +992,9 @@
    .product-page-photo,
    .product-page-main-photo {
       width: 360px;
+   }
+   .footer_rignt-side .footer_discription {
+      margin-top: 30px;
    }
 }
 

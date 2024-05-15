@@ -900,7 +900,7 @@ footer {
 .footer_rignt-side {
    width: 75%;
    background: #e1e8e0;
-   padding: 56px 32px;
+   padding: 56px 75px 56px 150px;
    display: flex;
    flex-wrap: wrap;
 }
@@ -945,8 +945,6 @@ footer {
 .footer-payment {
    display: flex;
    gap: 32px;
-   margin-top: auto;
-   width: 50%;
 }
 .footer-u-list .footer-tel > a {
    font-family: "TT Ramillas Trl", sans-serif;
@@ -954,6 +952,14 @@ footer {
    font-size: 40px;
    line-height: 1;
    color: #262626;
+}
+
+.footer-bottob-container {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   flex-wrap: wrap;
+   gap: 20px;
 }
 /* 2-page */
 .h2-no-margin {
