@@ -597,6 +597,9 @@
    }
 }
 @media (max-width: 800px) {
+   .subtitle-home {
+      margin-bottom: 75px;
+   }
    .parent {
       display: flex;
       flex-direction: column;

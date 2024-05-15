@@ -67,3 +67,30 @@ pagBtnNextM.addEventListener("click", function () {
 pagBtnPrevM.addEventListener("click", function () {
    containerM.scrollBy({ left: -window.innerWidth, behavior: "smooth" });
 });
+
+let startX,
+   startScrollLeft,
+   isMouseDown = false;
+
+container.addEventListener("mousedown", startDragging);
+document.addEventListener("mousemove", dragContent);
+document.addEventListener("mouseup", stopDragging);
+
+function startDragging(event) {
+   isMouseDown = true;
+   startX = event.pageX;
+   startScrollLeft = container.scrollLeft;
+   container.style.cursor = "grabbing";
+}
+
+function dragContent(event) {
+   if (!isMouseDown) return;
+
+   const offsetX = event.pageX - startX;
+   container.scrollLeft = startScrollLeft - offsetX;
+}
+
+function stopDragging() {
+   isMouseDown = false;
+   container.style.cursor = "grab";
+}
