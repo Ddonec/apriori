@@ -52,6 +52,9 @@
    .control-panel_pag-btns {
       display: none;
    }
+   .pag-btn-s-view {
+      display: flex;
+   }
    /* .control-panel_pag-btns {
       margin-bottom: 20px;
    } */
