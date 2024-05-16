@@ -704,6 +704,7 @@ h1 {
 .reviews-and-leave-feedback-flex {
    display: flex;
    justify-content: space-between;
+   position: relative;
 }
 
 .leave-feedback-top-line {

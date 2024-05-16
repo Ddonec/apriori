@@ -106,23 +106,12 @@ containerRev.addEventListener("scroll", function () {
 
    var scrolledPercent = (scrollLeft / (scrollWidth - clientWidth)) * 100;
    console.log(scrolledPercent);
-
-   if (scrolledPercent > 1) {
-      pagBtnPrevRev.classList.remove("unactive");
-   } else {
-      pagBtnPrevRev.classList.add("unactive");
-   }
-   if (scrolledPercent < 99) {
-      pagBtnNextRev.classList.remove("unactive");
-   } else {
-      pagBtnNextRev.classList.add("unactive");
-   }
 });
 
 pagBtnNextRev.addEventListener("click", function () {
-   containerRev.scrollBy({ left: window.innerWidth / 4, behavior: "smooth" });
+   containerRev.scrollBy({ left: containerRev.clientWidth + 12, behavior: "smooth" });
 });
 
 pagBtnPrevRev.addEventListener("click", function () {
-   containerRev.scrollBy({ left: -window.innerWidth / 4, behavior: "smooth" });
+   containerRev.scrollBy({ left: -containerRev.clientWidth - 12, behavior: "smooth" });
 });
