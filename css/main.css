@@ -462,6 +462,9 @@ h1 {
 .product-card:hover > .product-card_discription {
    background: #fff888;
 }
+.viewed-product:hover {
+   background: #fff888;
+}
 .product-card-image {
    display: flex;
    flex-direction: column;
