@@ -504,6 +504,10 @@
    .p-p-section-2 {
       margin-top: 50px;
    }
+   .menu-text-black,
+   .menu-text {
+      display: none;
+   }
 }
 @media (max-width: 900px) {
    .order-list {
