@@ -71,6 +71,8 @@ body {
    display: flex;
    align-items: center;
    order: 1;
+   gap: 10px;
+   cursor: pointer;
 }
 .burger-btn-desctop {
    display: flex;
@@ -460,6 +462,9 @@ h1 {
 .product-card:hover > .product-card_discription {
    background: #fff888;
 }
+.viewed-product:hover {
+   background: #fff888;
+}
 .product-card-image {
    display: flex;
    flex-direction: column;
@@ -670,6 +675,12 @@ h1 {
    font-size: 19px;
    font-family: Inter;
    color: #fff;
+   text-transform: uppercase;
+}
+.menu-text-black {
+   font-size: 19px;
+   font-family: Inter;
+   color: #000;
    text-transform: uppercase;
 }
 .right-zone-review {
