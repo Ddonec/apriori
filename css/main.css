@@ -614,16 +614,21 @@ h1 {
 .reviews-container {
    display: flex;
    gap: 24px;
+   width: fit-content;
 }
 .reviews-overflow-container {
    width: 75%;
+   overflow: scroll;
+}
+.reviews-overflow-container::-webkit-scrollbar {
+   display: none;
 }
 
 .review-card {
    background-color: white;
    padding: 45px 25px 36px 30px;
    border-radius: 24px;
-   width: calc(100% / 3 - 16px);
+   width: 23.5vw;
 }
 .review_top-block {
    display: flex;

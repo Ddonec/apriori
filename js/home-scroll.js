@@ -41,7 +41,7 @@ var pagBtnNextM = document.querySelector(".control-panel_next-btn-main");
 containerM.addEventListener("scroll", function () {
    var scrollWidthM = containerM.scrollWidth;
    var clientWidthM = containerM.clientWidth;
-   var scrollLeftM = containerM.scrollLeft; // Была ошибка здесь
+   var scrollLeftM = containerM.scrollLeft;
 
    var scrolledPercentM = (scrollLeftM / (scrollWidthM - clientWidthM)) * 100;
    pagActiveM.style.width = scrolledPercentM + "%";
@@ -94,3 +94,35 @@ function stopDragging() {
    isMouseDown = false;
    container.style.cursor = "grab";
 }
+
+var containerRev = document.querySelector(".reviews-overflow-container");
+var pagBtnPrevRev = document.querySelector(".review-scroll-prev-btn");
+var pagBtnNextRev = document.querySelector(".review-scroll-next-btn");
+
+containerRev.addEventListener("scroll", function () {
+   var scrollWidth = containerRev.scrollWidth;
+   var clientWidth = containerRev.clientWidth;
+   var scrollLeft = containerRev.scrollLeft;
+
+   var scrolledPercent = (scrollLeft / (scrollWidth - clientWidth)) * 100;
+   console.log(scrolledPercent);
+
+   if (scrolledPercent > 1) {
+      pagBtnPrevRev.classList.remove("unactive");
+   } else {
+      pagBtnPrevRev.classList.add("unactive");
+   }
+   if (scrolledPercent < 99) {
+      pagBtnNextRev.classList.remove("unactive");
+   } else {
+      pagBtnNextRev.classList.add("unactive");
+   }
+});
+
+pagBtnNextRev.addEventListener("click", function () {
+   containerRev.scrollBy({ left: window.innerWidth / 4, behavior: "smooth" });
+});
+
+pagBtnPrevRev.addEventListener("click", function () {
+   containerRev.scrollBy({ left: -window.innerWidth / 4, behavior: "smooth" });
+});
