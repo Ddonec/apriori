@@ -41,7 +41,7 @@ var pagBtnNextM = document.querySelector(".control-panel_next-btn-main");
 containerM.addEventListener("scroll", function () {
    var scrollWidthM = containerM.scrollWidth;
    var clientWidthM = containerM.clientWidth;
-   var scrollLeftM = containerM.scrollLeft; // Была ошибка здесь
+   var scrollLeftM = containerM.scrollLeft;
 
    var scrolledPercentM = (scrollLeftM / (scrollWidthM - clientWidthM)) * 100;
    pagActiveM.style.width = scrolledPercentM + "%";
@@ -94,3 +94,24 @@ function stopDragging() {
    isMouseDown = false;
    container.style.cursor = "grab";
 }
+
+var containerRev = document.querySelector(".reviews-overflow-container");
+var pagBtnPrevRev = document.querySelector(".review-scroll-prev-btn");
+var pagBtnNextRev = document.querySelector(".review-scroll-next-btn");
+
+containerRev.addEventListener("scroll", function () {
+   var scrollWidth = containerRev.scrollWidth;
+   var clientWidth = containerRev.clientWidth;
+   var scrollLeft = containerRev.scrollLeft;
+
+   var scrolledPercent = (scrollLeft / (scrollWidth - clientWidth)) * 100;
+   console.log(scrolledPercent);
+});
+
+pagBtnNextRev.addEventListener("click", function () {
+   containerRev.scrollBy({ left: containerRev.clientWidth + 12, behavior: "smooth" });
+});
+
+pagBtnPrevRev.addEventListener("click", function () {
+   containerRev.scrollBy({ left: -containerRev.clientWidth - 12, behavior: "smooth" });
+});

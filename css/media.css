@@ -52,6 +52,9 @@
    .control-panel_pag-btns {
       display: none;
    }
+   .pag-btn-s-view {
+      display: flex;
+   }
    /* .control-panel_pag-btns {
       margin-bottom: 20px;
    } */
@@ -982,7 +985,14 @@
       display: flex;
    }
    .control-panel-reviews {
-      display: none;
+      /* display: none; */
+      position: absolute;
+      bottom: -20px;
+      right: 0;
+      justify-content: end;
+   }
+   .reviews-and-leave-feedback-flex {
+      padding-bottom: 50px;
    }
    .left-p-p {
       flex-wrap: nowrap;
