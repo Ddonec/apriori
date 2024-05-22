@@ -223,6 +223,10 @@ h1 {
    display: flex;
    gap: 22px;
 }
+.flex-in-catalog-block > ing {
+   width: 48px;
+   height: 48px;
+}
 
 .name-of-thing-home {
    font-family: "TT Ramillas Trl", sans-serif;
