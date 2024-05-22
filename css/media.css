@@ -1022,4 +1022,7 @@
    .basket-tabs {
       flex-wrap: wrap;
    }
+   .logo-icon img {
+      width: 190px;
+   }
 }
