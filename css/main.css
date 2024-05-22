@@ -2690,6 +2690,10 @@ div.cs-last {
    text-transform: uppercase;
    color: #181818;
 }
+.nav-list-list.regular{
+   font-weight: 400;
+
+ }
 .nav-list a {
    color: unset;
    text-decoration: none;
