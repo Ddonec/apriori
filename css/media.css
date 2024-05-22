@@ -82,11 +82,15 @@
    }
    .right-p-p_control__to-cart {
       font-size: 16px;
-      background: #fe621d;
+      background: #ff5151;
       display: flex;
       align-items: center;
       justify-content: center;
       width: fit-content;
+   }
+   .exclusive-point::after {
+      width: 130px;
+      height: 130px;
    }
 }
 

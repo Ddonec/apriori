@@ -43,7 +43,7 @@ body {
 .home-collection {
    padding: 32px 56px 48px;
    height: 772px;
-   background-image: url(../assets/content/collection-header.png);
+   background-image: url(../assets/content/collection-header-update.jpeg);
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
@@ -1685,7 +1685,7 @@ div.cs-last {
    font-size: 24px;
    line-height: 1.24;
    letter-spacing: 0.01em;
-   color: #6d7762;
+   color: #6c6050;
 
    margin-bottom: 24px;
 }
@@ -1791,7 +1791,7 @@ div.cs-last {
    height: 64px;
    border-radius: 50%;
    display: flex;
-   background: #6d7762;
+   background: #6c6050;
 }
 .right-p-p_control__text {
    font-family: "Inter", sans-serif;
