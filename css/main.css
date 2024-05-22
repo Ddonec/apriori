@@ -28,6 +28,14 @@ body {
    justify-content: space-between;
    align-items: center;
 }
+.nav-absolut {
+   position: absolute;
+
+   width: calc(100% - 112px);
+   top: 32px;
+   left: 50%;
+   transform: translateX(-50%);
+}
 .home-header {
    padding: 32px 56px 48px;
    height: 960px;
