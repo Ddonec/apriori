@@ -602,6 +602,10 @@
    .h2-section {
       margin: 0 0 20px;
    }
+   .exclusive-point::after {
+      width: 100px;
+      height: 100px;
+   }
 }
 @media (max-width: 800px) {
    .subtitle-home {
@@ -614,10 +618,7 @@
    .small-div {
       width: 100%;
    }
-   .exclusive-point::after {
-      width: 100px;
-      height: 100px;
-   }
+
    .filter-box {
       display: none;
    }
