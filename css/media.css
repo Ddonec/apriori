@@ -34,6 +34,9 @@
    .cabinet-bonus-itog {
       max-width: 600px;
    }
+   .footer_rignt__ul-box {
+      width: 50%;
+   }
 }
 @media (max-width: 1400px) {
    h1,
