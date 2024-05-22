@@ -28,3 +28,9 @@ function toggleActiveTab() {
 }
 
 toggleActiveTab();
+
+document.querySelectorAll(".more-products-interior_product").forEach((item) => {
+   item.addEventListener("click", () => {
+      item.classList.toggle("in-cart");
+   });
+});
