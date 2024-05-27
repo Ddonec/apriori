@@ -50,8 +50,12 @@ body {
 
    width: 100vw;
    transition: 1s ease;
+   transform: translateX(-0%);
 }
 .home-header-owerflow {
+   width: 100%;
+   overflow-x: hidden;
+
 }
 .header-max-width-container {
    display: flex;
@@ -143,8 +147,14 @@ h1 {
 }
 .header-slider-buttons_prev {
    transform: rotate(180deg);
+   cursor: pointer;
 }
 .header-slider-buttons_next {
+   cursor: pointer;
+}
+.header-slider-buttons_prev.unactive,
+.header-slider-buttons_next.unactive {
+   cursor: default;
 }
 
 .line {
@@ -293,12 +303,26 @@ h1 {
    flex-wrap: wrap;
    gap: 24px;
 }
-.svg-icon path {
-   transition: fill 0.3s ease;
+.svg-icon,
+.svg-like-blk {
+   transition: all 0.6s ease;
 }
 .svg-icon:hover path:nth-child(1) {
-   /* fill: red;  */
    stroke: #000;
+   
+}
+.svg-like-blk:hover circle {
+   stroke: #000;
+}
+.filled-heart path {
+   fill: black;
+}
+.svg-like-white:hover circle {
+   stroke: #ffffff;
+}
+.filled-heart-w path {
+   fill: rgb(255, 255, 255);
+
 }
 .red-circle {
    background: rgb(255, 81, 81);
