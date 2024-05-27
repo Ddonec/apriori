@@ -308,6 +308,7 @@ h1 {
 }
 .svg-icon:hover path:nth-child(1) {
    stroke: #000;
+   
 }
 .svg-like-blk:hover circle {
    stroke: #000;
