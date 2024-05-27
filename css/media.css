@@ -34,6 +34,9 @@
    .cabinet-bonus-itog {
       max-width: 600px;
    }
+   .footer_rignt__ul-box {
+      width: 50%;
+   }
 }
 @media (max-width: 1400px) {
    h1,
@@ -82,11 +85,15 @@
    }
    .right-p-p_control__to-cart {
       font-size: 16px;
-      background: #fe621d;
+      background: #ff5151;
       display: flex;
       align-items: center;
       justify-content: center;
       width: fit-content;
+   }
+   .exclusive-point::after {
+      width: 130px;
+      height: 130px;
    }
 }
 
@@ -602,6 +609,10 @@
    .h2-section {
       margin: 0 0 20px;
    }
+   .exclusive-point::after {
+      width: 100px;
+      height: 100px;
+   }
 }
 @media (max-width: 800px) {
    .subtitle-home {
@@ -614,10 +625,7 @@
    .small-div {
       width: 100%;
    }
-   .exclusive-point::after {
-      width: 100px;
-      height: 100px;
-   }
+
    .filter-box {
       display: none;
    }
