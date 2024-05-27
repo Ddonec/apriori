@@ -53,6 +53,8 @@ body {
    transform: translateX(-0%);
 }
 .home-header-owerflow {
+   width: 100%;
+   overflow-x: hidden;
 }
 .header-max-width-container {
    display: flex;
@@ -144,8 +146,14 @@ h1 {
 }
 .header-slider-buttons_prev {
    transform: rotate(180deg);
+   cursor: pointer;
 }
 .header-slider-buttons_next {
+   cursor: pointer;
+}
+.header-slider-buttons_prev.unactive,
+.header-slider-buttons_next.unactive {
+   cursor: default;
 }
 
 .line {
