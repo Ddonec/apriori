@@ -47,6 +47,15 @@ body {
 
    display: flex;
    flex-direction: column;
+
+   width: 100vw;
+   transition: 1s ease;
+}
+.home-header-owerflow {
+}
+.header-max-width-container {
+   display: flex;
+   width: max-content;
 }
 .home-collection {
    padding: 32px 56px 48px;
