@@ -50,6 +50,7 @@ body {
 
    width: 100vw;
    transition: 1s ease;
+   transform: translateX(-0%);
 }
 .home-header-owerflow {
 }
