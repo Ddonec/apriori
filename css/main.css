@@ -302,12 +302,24 @@ h1 {
    flex-wrap: wrap;
    gap: 24px;
 }
-.svg-icon path {
-   transition: fill 0.3s ease;
+.svg-icon,
+.svg-like-blk {
+   transition: all 0.6s ease;
 }
 .svg-icon:hover path:nth-child(1) {
-   /* fill: red;  */
    stroke: #000;
+}
+.svg-like-blk:hover circle {
+   stroke: #000;
+}
+.filled-heart path {
+   fill: black;
+}
+.svg-like-white:hover circle {
+   stroke: #ffffff;
+}
+.filled-heart-w path {
+   fill: rgb(255, 255, 255);
 }
 .red-circle {
    background: rgb(255, 81, 81);
