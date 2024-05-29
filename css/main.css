@@ -736,6 +736,49 @@ h1 {
    color: #fff;
    text-transform: uppercase;
 }
+
+.custom-checkbox {
+   position: relative;
+   width: 14px;
+   height: 14px;
+   border: 1px solid #1d1d1d;
+   border-radius: 4px;
+   cursor: pointer;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+/* .custom-checkbox:hover {
+   background-color: #f8f3ed;
+} */
+
+.check-basket input[type="checkbox"] {
+   display: none;
+}
+
+.custom-checkbox::after {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 10px;
+   height: 10px;
+   background-color: #ff5151;
+   transform: translate(-50%, -50%) scale(0);
+   transition: transform 0.2s ease-in-out;
+   border-radius: 2px;
+}
+
+.check-basket input[type="checkbox"]:checked + .custom-checkbox::after {
+   transform: translate(-50%, -50%) scale(1);
+}
+
+.check-basket {
+   position: absolute;
+   top: 20px;
+   right: 0px;
+}
+
 .menu-text-black {
    font-size: 19px;
    font-family: Inter;
@@ -1995,6 +2038,7 @@ div.cs-last {
    text-transform: uppercase;
    text-align: right;
    color: #1d1d1d;
+   flex-shrink: 0;
 }
 .product-box__price___price span {
    font-weight: 400;
@@ -2098,7 +2142,7 @@ div.cs-last {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   height: 1.5px;
+   height: 0.94px;
    width: 20px;
    background: #000;
 }
@@ -2111,7 +2155,7 @@ div.cs-last {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   height: 1.5px;
+   height: 0.94px;
    width: 20px;
    background: #fff;
 }
@@ -2121,7 +2165,7 @@ div.cs-last {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%) rotate(90deg);
-   height: 1.5px;
+   height: 0.94px;
    width: 20px;
    background: #fff;
 }
@@ -2131,6 +2175,7 @@ div.cs-last {
    border-radius: 16px;
    align-items: center;
    width: 100%;
+   position: relative;
 }
 .basket_product.in-cart {
    background: #fff888;
@@ -2144,6 +2189,12 @@ div.cs-last {
    width: calc(66% + 64px);
 }
 
+.basket-sale {
+   margin-left: 0;
+}
+.t-a-start {
+   text-align: start;
+}
 .basket-product__mid.target {
    width: calc(66% - 16px);
 }
@@ -2185,11 +2236,14 @@ div.cs-last {
 }
 .basket-product-price-box {
    margin-left: auto;
+   display: flex;
+   flex-direction: column;
 }
 .basket-product-box {
    display: flex;
    align-items: center;
    gap: 24px;
+   position: relative;
 }
 .basket-checkbox {
    width: 24px;
