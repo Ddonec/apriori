@@ -604,7 +604,8 @@
       bottom: -20px;
    }
    .red-circle {
-      font-size: 24px;
+      font-size: 40px;
+      font-weight: 400;
    }
    .h2-section {
       margin: 0 0 20px;
@@ -747,6 +748,9 @@
    }
    .dscription-p-p_text__info-block {
       margin: 20px 0 3px;
+   }
+   .feedback-middle-score {
+      font-size: 30px;
    }
 }
 
@@ -918,9 +922,8 @@
       max-width: unset;
       border-radius: 10px;
    }
-   .nav-absolut{
+   .nav-absolut {
       width: calc(100% - 30px);
-
    }
    .img-search-order_btn::after {
       content: "Искать";
@@ -968,7 +971,7 @@
       font-size: 14px;
    }
    .review-card {
-      width: 360px;
+      width: calc(100vw - 30px);
    }
    .unactive,
    .mouse-swipe-img {
@@ -1024,6 +1027,12 @@
    .footer_rignt-side .footer_discription {
       margin-top: 30px;
    }
+   .social-webs-flex_img {
+      width: calc(100% / 2 - 6px);
+   }
+   .social-webs-flex {
+      gap: 12px;
+   }
 }
 
 @media (max-width: 400px) {
@@ -1035,5 +1044,12 @@
    }
    .logo-icon img {
       width: 170px;
+   }
+   .social-webs-flex_content {
+      scale: 0.8;
+   }
+   .content_sub-text,
+   .social-webs-flex_content {
+      margin-top: 5px;
    }
 }
