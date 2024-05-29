@@ -333,6 +333,18 @@ h1 {
 .filled-heart-w path {
    fill: rgb(255, 255, 255);
 }
+.svg-like-blk:hover circle {
+   stroke: #000;
+}
+.filled-heart path {
+   fill: black;
+}
+.svg-like-white:hover circle {
+   stroke: #ffffff;
+}
+.filled-heart-w path {
+   fill: rgb(255, 255, 255);
+}
 .red-circle {
    background: rgb(255, 81, 81);
    aspect-ratio: 1;
