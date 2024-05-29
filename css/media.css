@@ -656,6 +656,12 @@
    .filter-buttons {
       display: flex;
    }
+   .block_row__value {
+      font-size: 14px;
+   }
+   .summ-block_discr {
+      font-size: 12px;
+   }
    .b-f-i-1,
    .b-f-i-2,
    .b-f-i-3,
@@ -703,7 +709,8 @@
    .dot-pannel {
       width: 8px;
    }
-   .footer-title {
+   .footer-title,
+   .basket-summ {
       font-size: 22px;
    }
    .footer-u-list > li > a {

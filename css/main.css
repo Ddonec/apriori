@@ -2401,7 +2401,7 @@ div.cs-last {
    color: #1d1d1d70;
 }
 .booking-form_input-comment {
-   border: 4px solid #f8f3ed;
+   border: 2px solid #f8f3ed;
    border-radius: 16px;
    padding: 22px 24px;
    width: 100%;
@@ -2409,11 +2409,11 @@ div.cs-last {
    position: relative;
 }
 .booking-form_input-comment::placeholder {
-   top: 22px;
+   top: 20px;
    position: absolute;
 }
 .booking-form_input.no-need {
-   border: 4px solid #f8f3ed;
+   border: 2px solid #f8f3ed;
    background: #fff;
 }
 .b-f-i-1 {
