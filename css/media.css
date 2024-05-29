@@ -918,7 +918,10 @@
       max-width: unset;
       border-radius: 10px;
    }
+   .nav-absolut{
+      width: calc(100% - 30px);
 
+   }
    .img-search-order_btn::after {
       content: "Искать";
       display: block;
@@ -1031,6 +1034,6 @@
       flex-wrap: wrap;
    }
    .logo-icon img {
-      width: 190px;
+      width: 170px;
    }
 }
