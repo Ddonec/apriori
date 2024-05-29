@@ -308,7 +308,6 @@ h1 {
 }
 .svg-icon:hover path:nth-child(1) {
    stroke: #000;
-   
 }
 .svg-like-blk:hover circle {
    stroke: #000;
@@ -321,7 +320,6 @@ h1 {
 }
 .filled-heart-w path {
    fill: rgb(255, 255, 255);
-
 }
 .svg-like-blk:hover circle {
    stroke: #000;
@@ -2386,7 +2384,9 @@ div.cs-last {
    width: 100%;
    text-align: center;
 }
-
+.stat-value {
+   font-size: 24px;
+}
 .booking-form {
    margin-top: 48px;
    display: flex;
