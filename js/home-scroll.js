@@ -109,9 +109,9 @@ containerRev.addEventListener("scroll", function () {
 });
 
 pagBtnNextRev.addEventListener("click", function () {
-   containerRev.scrollBy({ left: containerRev.clientWidth + 12, behavior: "smooth" });
+   containerRev.scrollBy({ left: containerRev.clientWidth + 24, behavior: "smooth" });
 });
 
 pagBtnPrevRev.addEventListener("click", function () {
-   containerRev.scrollBy({ left: -containerRev.clientWidth - 12, behavior: "smooth" });
+   containerRev.scrollBy({ left: -containerRev.clientWidth - 24, behavior: "smooth" });
 });
