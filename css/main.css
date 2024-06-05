@@ -2933,3 +2933,6 @@ div.cs-last {
 .pointer {
    cursor: pointer;
 }
+.link-normal-text{
+   text-decoration: none;
+}
