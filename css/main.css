@@ -335,6 +335,12 @@ h1 {
 .panel_magic__show-collection:hover .see-collection-hover circle {
    stroke: #fff888;
 }
+.arrow-svg-btn:hover {
+   fill: #fff888;
+}
+.arrow-svg-btn:hover circle {
+   stroke: #fff888;
+}
 .filled-heart path {
    fill: black;
 }
@@ -2933,6 +2939,6 @@ div.cs-last {
 .pointer {
    cursor: pointer;
 }
-.link-normal-text{
+.link-normal-text {
    text-decoration: none;
 }
