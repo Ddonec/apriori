@@ -324,6 +324,17 @@ h1 {
 .svg-like-blk:hover circle {
    stroke: #000;
 }
+.see-collection-hover {
+}
+.panel_magic__show-collection:hover .see-collection-hover {
+   fill: #fff888;
+}
+.panel_magic__show-collection:hover .see-collection-hover path {
+   stroke: #1d1d1d;
+}
+.panel_magic__show-collection:hover .see-collection-hover circle {
+   stroke: #fff888;
+}
 .filled-heart path {
    fill: black;
 }
