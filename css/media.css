@@ -109,7 +109,13 @@
    .reviews-container {
       width: max-content;
    }
-
+   .check-basket {
+      position: absolute;
+      top: 20px;
+      right: 0px;
+      left: unset;
+      opacity: 1;
+   }
    .base-style_block {
       height: 20%;
       margin: 0;

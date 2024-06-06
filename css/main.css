@@ -816,8 +816,10 @@ h1 {
 
 .check-basket {
    position: absolute;
-   top: 20px;
-   right: 0px;
+   top: 50%;
+   transform: translateY(-50%);
+   left: -20px;
+   opacity: 0;
 }
 
 .menu-text-black {
@@ -2166,6 +2168,9 @@ div.cs-last {
    display: flex;
    gap: 16px;
    margin-left: 16px;
+   position: absolute;
+   opacity: 0;
+   z-index: -1;
 }
 .basket-btn_plus,
 .basket-btn_minus {
@@ -2218,8 +2223,20 @@ div.cs-last {
    width: 100%;
    position: relative;
 }
-.basket_product.in-cart {
+.basket_product:hover {
    background: #fff888;
+   margin-left: 20px;
+   width: calc(100% - 20px);
+}
+.basket_product:hover .check-basket {
+   opacity: 1;
+}
+.basket_product:hover .basket-product__mid {
+   width: calc(((100% + 20px) * 0.66) - 20px);
+}
+.basket_product:hover .basket-count-buttons {
+   opacity: 1;
+   z-index: 1;
 }
 .basket_product__text {
    width: 85%;
@@ -2250,6 +2267,7 @@ div.cs-last {
    justify-content: space-between;
    align-items: center;
    flex-grow: 1;
+   position: relative;
 }
 .buttons-block {
    display: none;
