@@ -2268,6 +2268,9 @@ div.cs-last {
    transform: translateX(100%);
    right: -16px;
 }
+.catalog-viewed .basket-sale {
+   transform: translateX(0);
+}
 .t-a-start {
    text-align: start;
 }
