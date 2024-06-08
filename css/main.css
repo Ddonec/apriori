@@ -2122,6 +2122,10 @@ div.cs-last {
    letter-spacing: 0.01em;
    color: #1d1d1d;
 }
+.basket-tabs_tab:hover {
+   background: #f6f6f6;
+   cursor: pointer;
+}
 .basket-tabs_clear {
    color: #ff5151;
 }
