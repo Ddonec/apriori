@@ -2179,10 +2179,13 @@ div.cs-last {
    position: relative;
    border-radius: 50%;
    background: #fff;
+   cursor: pointer;
+}
+.basket-btn_plus:hover,
+.basket-btn_minus:hover {
+   background: #ff5151;
+}
 
-}
-.basket-btn_plus {
-}
 .basket-btn_plus::after {
    content: "";
    position: absolute;
@@ -2193,8 +2196,7 @@ div.cs-last {
    width: 20px;
    background: #000;
 }
-.basket-btn_minus {
-}
+
 .basket-btn_minus::after {
    content: "";
    position: absolute;
@@ -2214,6 +2216,11 @@ div.cs-last {
    height: 0.94px;
    width: 20px;
    background: #000;
+}
+.basket-btn_plus:hover::after,
+.basket-btn_minus:hover::after,
+.basket-btn_minus:hover::before {
+   background: #fff;
 }
 .basket_product {
    display: flex;
