@@ -2246,7 +2246,7 @@ div.cs-last {
    z-index: 1;
 }
 .basket_product:hover .basket-sale {
-   display: none;
+   opacity: 0;
 }
 
 .basket_product__text {
