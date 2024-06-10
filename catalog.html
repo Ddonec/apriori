@@ -13,7 +13,11 @@
       <header class="catalog-header">
          <nav class="home-nav-menu">
             <div class="burger-btn" onclick="toggleMenu()">
-               <img class="svg-class" src="./assets/icon/nav-btn-dark.svg" alt="" />
+               <svg class="svg-class pointer" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="12" y="31" width="16" height="1" fill="#1D1D1D" />
+                  <rect x="12" y="24" width="24" height="1" fill="#1D1D1D" />
+                  <rect x="12" y="17" width="20" height="1" fill="#1D1D1D" />
+               </svg>
                <p class="menu-text-black">Меню</p>
             </div>
             <div class="logo-icon">
@@ -73,7 +77,11 @@
             <!-- mt112 -->
             <nav class="home-nav-menu">
                <div class="burger-btn" onclick="toggleMenu()">
-                  <img class="svg-class" src="./assets/icon/nav-btn-dark.svg" alt="" />
+                  <svg class="svg-class pointer" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <rect x="12" y="31" width="16" height="1" fill="#1D1D1D" />
+                     <rect x="12" y="24" width="24" height="1" fill="#1D1D1D" />
+                     <rect x="12" y="17" width="20" height="1" fill="#1D1D1D" />
+                  </svg>
                   <p class="menu-text-black">Меню</p>
                </div>
                <div class="logo-icon">
@@ -306,9 +314,13 @@
                   <option value="2">Дерево</option>
                   <option value="3">Золото</option>
                </select>
-               <select class="cs-select cs-clear">
-                  <option value="1">Очистить фильтр</option>
-               </select>
+               <div class="clear-filter-btn">
+                  Очистить фильтр
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M20.4854 3.51471L3.51479 20.4853" stroke="#FF5151" stroke-width="2" />
+                     <path d="M20.4854 20.4853L3.51479 3.51473" stroke="#FF5151" stroke-width="2" />
+                  </svg>
+               </div>
                <select class="cs-select cs-last border-none">
                   <option value="1">По популярности</option>
                   <option value="2">По убыванию</option>
@@ -328,7 +340,16 @@
                         </div>
                         <p class="huge_discription">89 см | Золотое</p>
                      </div>
-                     <img class="catalog-mid_like" src="./assets/icon/like-black.svg" alt="" style="width: 48px" />
+                     <svg class="product-card_like-btn svg-like-blk catalog-mid_like" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.48" cx="24" cy="24" r="23.5" stroke="#1D1D1D3D" />
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M32.7236 17.4022C30.3551 14.8659 26.4443 14.8659 24.0207 17.4022C21.5971 14.8659 17.7413 14.8659 15.3177 17.4022C12.8941 19.9386 12.8941 23.9736 15.3177 26.5099L24.0207 34.5L32.7236 26.5099C35.0921 23.9736 35.0921 19.9386 32.7236 17.4022Z"
+                           stroke="#1D1D1D"
+                           stroke-miterlimit="10"
+                        />
+                     </svg>
                      <div class="viewed-product_discont-value"><span>–</span>15<span>%</span></div>
                   </div>
                </div>
@@ -342,7 +363,16 @@
                         </div>
                         <p class="huge_discription">62 см | Дерево</p>
                      </div>
-                     <img class="catalog-mid_like" src="./assets/icon/like-black.svg" alt="" style="width: 48px" />
+                     <svg class="product-card_like-btn svg-like-blk catalog-mid_like" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.48" cx="24" cy="24" r="23.5" stroke="#1D1D1D3D" />
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M32.7236 17.4022C30.3551 14.8659 26.4443 14.8659 24.0207 17.4022C21.5971 14.8659 17.7413 14.8659 15.3177 17.4022C12.8941 19.9386 12.8941 23.9736 15.3177 26.5099L24.0207 34.5L32.7236 26.5099C35.0921 23.9736 35.0921 19.9386 32.7236 17.4022Z"
+                           stroke="#1D1D1D"
+                           stroke-miterlimit="10"
+                        />
+                     </svg>
                   </div>
                </div>
                <div class="div3 small-div">
@@ -355,7 +385,16 @@
                         </div>
                         <p class="huge_discription">69 х 109 см | Бронза</p>
                      </div>
-                     <img class="catalog-mid_like" src="./assets/icon/like-black.svg" alt="" style="width: 48px" />
+                     <svg class="product-card_like-btn svg-like-blk catalog-mid_like" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.48" cx="24" cy="24" r="23.5" stroke="#1D1D1D3D" />
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M32.7236 17.4022C30.3551 14.8659 26.4443 14.8659 24.0207 17.4022C21.5971 14.8659 17.7413 14.8659 15.3177 17.4022C12.8941 19.9386 12.8941 23.9736 15.3177 26.5099L24.0207 34.5L32.7236 26.5099C35.0921 23.9736 35.0921 19.9386 32.7236 17.4022Z"
+                           stroke="#1D1D1D"
+                           stroke-miterlimit="10"
+                        />
+                     </svg>
                      <div class="viewed-product_discont-value"><span>–</span>5<span>%</span></div>
                   </div>
                </div>
@@ -369,7 +408,16 @@
                         </div>
                         <p class="huge_discription">78 х 58 см | Дерево</p>
                      </div>
-                     <img class="catalog-mid_like" src="./assets/icon/like-black.svg" alt="" style="width: 48px" />
+                     <svg class="product-card_like-btn svg-like-blk catalog-mid_like" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.48" cx="24" cy="24" r="23.5" stroke="#1D1D1D3D" />
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M32.7236 17.4022C30.3551 14.8659 26.4443 14.8659 24.0207 17.4022C21.5971 14.8659 17.7413 14.8659 15.3177 17.4022C12.8941 19.9386 12.8941 23.9736 15.3177 26.5099L24.0207 34.5L32.7236 26.5099C35.0921 23.9736 35.0921 19.9386 32.7236 17.4022Z"
+                           stroke="#1D1D1D"
+                           stroke-miterlimit="10"
+                        />
+                     </svg>
                   </div>
                </div>
                <div class="div5 small-div">
@@ -382,7 +430,16 @@
                         </div>
                         <p class="huge_discription">89 см | Золотое</p>
                      </div>
-                     <img class="catalog-mid_like" src="./assets/icon/like-black.svg" alt="" style="width: 48px" />
+                     <svg class="product-card_like-btn svg-like-blk catalog-mid_like" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.48" cx="24" cy="24" r="23.5" stroke="#1D1D1D3D" />
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M32.7236 17.4022C30.3551 14.8659 26.4443 14.8659 24.0207 17.4022C21.5971 14.8659 17.7413 14.8659 15.3177 17.4022C12.8941 19.9386 12.8941 23.9736 15.3177 26.5099L24.0207 34.5L32.7236 26.5099C35.0921 23.9736 35.0921 19.9386 32.7236 17.4022Z"
+                           stroke="#1D1D1D"
+                           stroke-miterlimit="10"
+                        />
+                     </svg>
                      <div class="viewed-product_discont-value"><span>–</span>15<span>%</span></div>
                   </div>
                </div>
@@ -396,7 +453,16 @@
                         </div>
                         <p class="huge_discription">90 см | Золото</p>
                      </div>
-                     <img class="catalog-mid_like" src="./assets/icon/like-black.svg" alt="" style="width: 48px" />
+                     <svg class="product-card_like-btn svg-like-blk catalog-mid_like" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.48" cx="24" cy="24" r="23.5" stroke="#1D1D1D3D" />
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M32.7236 17.4022C30.3551 14.8659 26.4443 14.8659 24.0207 17.4022C21.5971 14.8659 17.7413 14.8659 15.3177 17.4022C12.8941 19.9386 12.8941 23.9736 15.3177 26.5099L24.0207 34.5L32.7236 26.5099C35.0921 23.9736 35.0921 19.9386 32.7236 17.4022Z"
+                           stroke="#1D1D1D"
+                           stroke-miterlimit="10"
+                        />
+                     </svg>
                   </div>
                </div>
                <div class="div7 small-div">
@@ -409,7 +475,16 @@
                         </div>
                         <p class="huge_discription">90 см | Метал</p>
                      </div>
-                     <img class="catalog-mid_like" src="./assets/icon/like-black.svg" alt="" style="width: 48px" />
+                     <svg class="product-card_like-btn svg-like-blk catalog-mid_like" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.48" cx="24" cy="24" r="23.5" stroke="#1D1D1D3D" />
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M32.7236 17.4022C30.3551 14.8659 26.4443 14.8659 24.0207 17.4022C21.5971 14.8659 17.7413 14.8659 15.3177 17.4022C12.8941 19.9386 12.8941 23.9736 15.3177 26.5099L24.0207 34.5L32.7236 26.5099C35.0921 23.9736 35.0921 19.9386 32.7236 17.4022Z"
+                           stroke="#1D1D1D"
+                           stroke-miterlimit="10"
+                        />
+                     </svg>
                   </div>
                </div>
                <div class="div8 small-div">
@@ -422,7 +497,16 @@
                         </div>
                         <p class="huge_discription">65 х 51 см | Бронза</p>
                      </div>
-                     <img class="catalog-mid_like" src="./assets/icon/like-black.svg" alt="" style="width: 48px" />
+                     <svg class="product-card_like-btn svg-like-blk catalog-mid_like" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.48" cx="24" cy="24" r="23.5" stroke="#1D1D1D3D" />
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M32.7236 17.4022C30.3551 14.8659 26.4443 14.8659 24.0207 17.4022C21.5971 14.8659 17.7413 14.8659 15.3177 17.4022C12.8941 19.9386 12.8941 23.9736 15.3177 26.5099L24.0207 34.5L32.7236 26.5099C35.0921 23.9736 35.0921 19.9386 32.7236 17.4022Z"
+                           stroke="#1D1D1D"
+                           stroke-miterlimit="10"
+                        />
+                     </svg>
                   </div>
                </div>
                <div class="div9 small-div">
@@ -435,7 +519,16 @@
                         </div>
                         <p class="huge_discription">86 см | Золотое</p>
                      </div>
-                     <img class="catalog-mid_like" src="./assets/icon/like-black.svg" alt="" style="width: 48px" />
+                     <svg class="product-card_like-btn svg-like-blk catalog-mid_like" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.48" cx="24" cy="24" r="23.5" stroke="#1D1D1D3D" />
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M32.7236 17.4022C30.3551 14.8659 26.4443 14.8659 24.0207 17.4022C21.5971 14.8659 17.7413 14.8659 15.3177 17.4022C12.8941 19.9386 12.8941 23.9736 15.3177 26.5099L24.0207 34.5L32.7236 26.5099C35.0921 23.9736 35.0921 19.9386 32.7236 17.4022Z"
+                           stroke="#1D1D1D"
+                           stroke-miterlimit="10"
+                        />
+                     </svg>
                      <div class="viewed-product_discont-value"><span>–</span>20<span>%</span></div>
                   </div>
                </div>
@@ -449,7 +542,16 @@
                         </div>
                         <p class="huge_discription">41 см</p>
                      </div>
-                     <img class="catalog-mid_like" src="./assets/icon/like-black.svg" alt="" style="width: 48px" />
+                     <svg class="product-card_like-btn svg-like-blk catalog-mid_like" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.48" cx="24" cy="24" r="23.5" stroke="#1D1D1D3D" />
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M32.7236 17.4022C30.3551 14.8659 26.4443 14.8659 24.0207 17.4022C21.5971 14.8659 17.7413 14.8659 15.3177 17.4022C12.8941 19.9386 12.8941 23.9736 15.3177 26.5099L24.0207 34.5L32.7236 26.5099C35.0921 23.9736 35.0921 19.9386 32.7236 17.4022Z"
+                           stroke="#1D1D1D"
+                           stroke-miterlimit="10"
+                        />
+                     </svg>
                   </div>
                </div>
                <div class="div11 small-div">
@@ -462,7 +564,16 @@
                         </div>
                         <p class="huge_discription">58 см | Белое</p>
                      </div>
-                     <img class="catalog-mid_like" src="./assets/icon/like-black.svg" alt="" style="width: 48px" />
+                     <svg class="product-card_like-btn svg-like-blk catalog-mid_like" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.48" cx="24" cy="24" r="23.5" stroke="#1D1D1D3D" />
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M32.7236 17.4022C30.3551 14.8659 26.4443 14.8659 24.0207 17.4022C21.5971 14.8659 17.7413 14.8659 15.3177 17.4022C12.8941 19.9386 12.8941 23.9736 15.3177 26.5099L24.0207 34.5L32.7236 26.5099C35.0921 23.9736 35.0921 19.9386 32.7236 17.4022Z"
+                           stroke="#1D1D1D"
+                           stroke-miterlimit="10"
+                        />
+                     </svg>
                   </div>
                </div>
                <div class="div12 small-div">
@@ -475,7 +586,16 @@
                         </div>
                         <p class="huge_discription">50 см | Черные</p>
                      </div>
-                     <img class="catalog-mid_like" src="./assets/icon/like-black.svg" alt="" style="width: 48px" />
+                     <svg class="product-card_like-btn svg-like-blk catalog-mid_like" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.48" cx="24" cy="24" r="23.5" stroke="#1D1D1D3D" />
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M32.7236 17.4022C30.3551 14.8659 26.4443 14.8659 24.0207 17.4022C21.5971 14.8659 17.7413 14.8659 15.3177 17.4022C12.8941 19.9386 12.8941 23.9736 15.3177 26.5099L24.0207 34.5L32.7236 26.5099C35.0921 23.9736 35.0921 19.9386 32.7236 17.4022Z"
+                           stroke="#1D1D1D"
+                           stroke-miterlimit="10"
+                        />
+                     </svg>
                   </div>
                </div>
                <div class="div13 small-div">
@@ -488,7 +608,16 @@
                         </div>
                         <p class="huge_discription">90 х 60 см</p>
                      </div>
-                     <img class="catalog-mid_like" src="./assets/icon/like-black.svg" alt="" style="width: 48px" />
+                     <svg class="product-card_like-btn svg-like-blk catalog-mid_like" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.48" cx="24" cy="24" r="23.5" stroke="#1D1D1D3D" />
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M32.7236 17.4022C30.3551 14.8659 26.4443 14.8659 24.0207 17.4022C21.5971 14.8659 17.7413 14.8659 15.3177 17.4022C12.8941 19.9386 12.8941 23.9736 15.3177 26.5099L24.0207 34.5L32.7236 26.5099C35.0921 23.9736 35.0921 19.9386 32.7236 17.4022Z"
+                           stroke="#1D1D1D"
+                           stroke-miterlimit="10"
+                        />
+                     </svg>
                   </div>
                </div>
                <div class="div14 small-div">
@@ -501,7 +630,16 @@
                         </div>
                         <p class="huge_discription">90 х 65 см</p>
                      </div>
-                     <img class="catalog-mid_like" src="./assets/icon/like-black.svg" alt="" style="width: 48px" />
+                     <svg class="product-card_like-btn svg-like-blk catalog-mid_like" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.48" cx="24" cy="24" r="23.5" stroke="#1D1D1D3D" />
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M32.7236 17.4022C30.3551 14.8659 26.4443 14.8659 24.0207 17.4022C21.5971 14.8659 17.7413 14.8659 15.3177 17.4022C12.8941 19.9386 12.8941 23.9736 15.3177 26.5099L24.0207 34.5L32.7236 26.5099C35.0921 23.9736 35.0921 19.9386 32.7236 17.4022Z"
+                           stroke="#1D1D1D"
+                           stroke-miterlimit="10"
+                        />
+                     </svg>
                   </div>
                </div>
                <div class="div15 small-div">
@@ -514,7 +652,16 @@
                         </div>
                         <p class="huge_discription">40 см | Черные | Серебро</p>
                      </div>
-                     <img class="catalog-mid_like" src="./assets/icon/like-black.svg" alt="" style="width: 48px" />
+                     <svg class="product-card_like-btn svg-like-blk catalog-mid_like" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle opacity="0.48" cx="24" cy="24" r="23.5" stroke="#1D1D1D3D" />
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M32.7236 17.4022C30.3551 14.8659 26.4443 14.8659 24.0207 17.4022C21.5971 14.8659 17.7413 14.8659 15.3177 17.4022C12.8941 19.9386 12.8941 23.9736 15.3177 26.5099L24.0207 34.5L32.7236 26.5099C35.0921 23.9736 35.0921 19.9386 32.7236 17.4022Z"
+                           stroke="#1D1D1D"
+                           stroke-miterlimit="10"
+                        />
+                     </svg>
                      <div class="viewed-product_discont-value"><span>–</span>15<span>%</span></div>
                   </div>
                </div>
@@ -684,11 +831,17 @@
             <div class="third-section-control-panel">
                <img class="mouse-swipe-img" src="./assets/icon/Frame 482379.svg" alt="" />
                <div class="control-panel_pag-btns">
-                  <img class="control-panel_prev-btn unactive" src="./assets/icon/Button (7).svg" alt="" />
-                  <div class="pag-line">
+                  <svg class="control-panel_prev-btn arrow-svg-btn unactive pointer" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <circle cx="24" cy="24" r="23.5" stroke="#1D1D1D7e" />
+                     <path d="M23 32L31 24M31 24L23 16M31 24H15" stroke="#1D1D1D" />
+                  </svg>
+                  <div class="pag-line line-between-arrows none">
                      <p class="pag-line__pag-active"></p>
                   </div>
-                  <img class="control-panel_next-btn" src="./assets/icon/Button (7).svg" alt="" />
+                  <svg class="control-panel_next-btn arrow-svg-btn pointer" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <circle cx="24" cy="24" r="23.5" stroke="#1D1D1D7e" />
+                     <path d="M23 32L31 24M31 24L23 16M31 24H15" stroke="#1D1D1D" />
+                  </svg>
                </div>
             </div>
          </section>
@@ -719,7 +872,7 @@
                </div>
             </div>
          </section>
-         <section class="section-default section-m-50">
+         <section class="section-default section-m-50 mt95">
             <h2 class="h2-section mb">Просмотренные товары</h2>
          </section>
          <div class="viewed-products-overflow-container">

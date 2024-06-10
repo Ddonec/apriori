@@ -13,7 +13,11 @@
       <header class="product-header">
          <nav class="home-nav-menu">
             <div class="burger-btn" onclick="toggleMenu()">
-               <img class="svg-class pointer" src="./assets/icon/nav-btn-dark.svg" alt="" />
+               <svg class="svg-class pointer" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="12" y="31" width="16" height="1" fill="#1D1D1D" />
+                  <rect x="12" y="24" width="24" height="1" fill="#1D1D1D" />
+                  <rect x="12" y="17" width="20" height="1" fill="#1D1D1D" />
+               </svg>
                <p class="menu-text-black">Меню</p>
             </div>
             <div class="logo-icon">
@@ -74,7 +78,11 @@
             <!-- mt112 -->
             <nav class="home-nav-menu">
                <div class="burger-btn" onclick="toggleMenu()">
-                  <img class="svg-class" src="./assets/icon/nav-btn-dark.svg" alt="" />
+                  <svg class="svg-class pointer" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <rect x="12" y="31" width="16" height="1" fill="#1D1D1D" />
+                     <rect x="12" y="24" width="24" height="1" fill="#1D1D1D" />
+                     <rect x="12" y="17" width="20" height="1" fill="#1D1D1D" />
+                  </svg>
                   <p class="menu-text-black">Меню</p>
                </div>
                <div class="logo-icon">
@@ -309,7 +317,11 @@
                   <img class="opacity" src="./assets/icon/gray-circle.svg" alt="" />
                   <div class="gray-line_line-24"></div>
                   <div class="right-p-p_show-more-btn pointer" onclick="toggleProductDisc()">
-                     <img class="right-p-p_show-more-img" src="./assets/icon/download-btn.svg" alt="" />
+                     <svg class="right-p-p_show-more-img svg-burger-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="23.5" transform="rotate(90 24 24)" stroke="#1D1D1D" stroke-opacity="0.24" />
+                        <path d="M15.5147 23.4853L24 31.9706M24 31.9706L32.4853 23.4853M24 31.9706L24 15" stroke="#1D1D1D" />
+                     </svg>
+
                      <p class="right-p-p_show-more-text">Полное описание</p>
                   </div>
                   <div class="gray-line_line-24"></div>
@@ -317,10 +329,38 @@
                </div>
                <div class="right-p-p_control-panel">
                   <div class="right-p-p_control__to-cart pointer">В корзину</div>
-                  <div class="right-p-p_control__like pointer"><img src="./assets/icon/like-without-radius.svg" alt="" style="width: 24px; margin: auto" /></div>
+                  <div class="right-p-p_control__like pointer">
+                     <svg class="like-icon-product-w-r" width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M19.3082 2.70201C17.0525 0.432665 13.3279 0.432665 11.0197 2.70201C8.71149 0.432665 5.03934 0.432665 2.73115 2.70201C0.422951 4.97135 0.422951 8.58166 2.73115 10.851L11.0197 19L19.3082 10.851C21.5639 8.58166 21.5639 4.97135 19.3082 2.70201Z"
+                           stroke="#fff"
+                           stroke-width="2"
+                           stroke-miterlimit="10"
+                        />
+                     </svg>
+                  </div>
                   <div class="right-p-p-tg-container">
                      <p class="right-p-p_control__text">Спросить в Telegram</p>
-                     <img class="pointer" src="./assets/icon/telegram-1-black.svg" alt="" />
+                     <svg class="pointer product-ask-tg-btn" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_607_6343)">
+                           <path
+                              d="M63.5 32C63.5 49.3969 49.3969 63.5 32 63.5C14.6031 63.5 0.5 49.3969 0.5 32C0.5 14.6031 14.6031 0.5 32 0.5C49.3969 0.5 63.5 14.6031 63.5 32Z"
+                              stroke="#1D1D1D"
+                              stroke-opacity=".24"
+                           />
+                           <path
+                              d="M17.9877 31.7918C17.9877 31.7918 29.9877 26.867 34.1494 25.1328C35.7449 24.4392 41.1552 22.2195 41.1552 22.2195C41.1552 22.2195 43.6524 21.2485 43.4443 23.6068C43.3749 24.578 42.82 27.9767 42.2651 31.6531C41.4327 36.8554 40.531 42.5432 40.531 42.5432C40.531 42.5432 40.3922 44.1386 39.2131 44.4161C38.0339 44.6935 36.0916 43.445 35.7449 43.1675C35.4673 42.9595 30.5425 39.838 28.7391 38.312C28.2535 37.8958 27.6986 37.0635 28.8084 36.0924C31.3055 33.8034 34.2882 30.9595 36.0916 29.156C36.924 28.3236 37.7564 26.3814 34.2882 28.7397C29.3634 32.1386 24.5079 35.3294 24.5079 35.3294C24.5079 35.3294 23.398 36.023 21.3171 35.3987C19.2361 34.7745 16.8084 33.9421 16.8084 33.9421C16.8084 33.9421 15.1438 32.9016 17.9877 31.7918Z"
+                              fill="#1D1D1D"
+                           />
+                        </g>
+                        <defs>
+                           <clipPath id="clip0_607_6343">
+                              <rect width="64" height="64" fill="white" />
+                           </clipPath>
+                        </defs>
+                     </svg>
                   </div>
                </div>
             </div>
@@ -371,6 +411,23 @@
                            <p class="product-box__price___price">300 <span>₽</span></p>
                            <p class="product-box__price___price-old zero-opacity">10</p>
                         </div>
+                        <div class="red-cart-button-product pointer none">
+                           <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="32" cy="32" r="32" fill="#FF5151" />
+                              <path
+                                 d="M21.315 27.8518C21.5544 25.6361 23.3651 24 25.4743 24H39.5257C41.6349 24 43.4456 25.6361 43.685 27.8518L44.9654 39.7045C45.3314 43.0932 42.7553 46 39.5177 46H25.4823C22.2447 46 19.6686 43.0932 20.0346 39.7045L21.315 27.8518Z"
+                                 fill="white"
+                                 stroke="white"
+                                 stroke-width="2"
+                              />
+                              <path
+                                 fill-rule="evenodd"
+                                 clip-rule="evenodd"
+                                 d="M26 20.4681C26 16.8959 28.9101 14 32.5 14C36.0899 14 39 16.8959 39 20.4681V30H36.9474V20.4681C36.9474 18.0239 34.9562 16.0426 32.5 16.0426C30.0438 16.0426 28.0526 18.0239 28.0526 20.4681V30H26V20.4681Z"
+                                 fill="white"
+                              />
+                           </svg>
+                        </div>
                      </div>
                      <div class="more-products-interior_product in-cart">
                         <img class="interior_product-box__img" src="./assets/content/interiour-dop-2.png" alt="" />
@@ -379,7 +436,25 @@
                            <p class="product-box__text-box___subtitle">18 см</p>
                         </div>
                         <div class="interior_product-box__price">
-                           <img src="./assets/icon/dilete-in-cart.svg" alt="" />
+                           <p class="product-box__price___price">99 999<span>₽</span></p>
+                           <p class="product-box__price___price-old opacity"><span>199 999</span> ₽</p>
+                        </div>
+                        <div class="red-cart-button-product pointer none">
+                           <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="32" cy="32" r="32" fill="#FF5151" />
+                              <path
+                                 d="M21.315 27.8518C21.5544 25.6361 23.3651 24 25.4743 24H39.5257C41.6349 24 43.4456 25.6361 43.685 27.8518L44.9654 39.7045C45.3314 43.0932 42.7553 46 39.5177 46H25.4823C22.2447 46 19.6686 43.0932 20.0346 39.7045L21.315 27.8518Z"
+                                 fill="white"
+                                 stroke="white"
+                                 stroke-width="2"
+                              />
+                              <path
+                                 fill-rule="evenodd"
+                                 clip-rule="evenodd"
+                                 d="M26 20.4681C26 16.8959 28.9101 14 32.5 14C36.0899 14 39 16.8959 39 20.4681V30H36.9474V20.4681C36.9474 18.0239 34.9562 16.0426 32.5 16.0426C30.0438 16.0426 28.0526 18.0239 28.0526 20.4681V30H26V20.4681Z"
+                                 fill="white"
+                              />
+                           </svg>
                         </div>
                      </div>
                      <div class="more-products-interior_product">
@@ -391,6 +466,23 @@
                         <div class="interior_product-box__price">
                            <p class="product-box__price___price">29 800 <span>₽</span></p>
                            <p class="product-box__price___price-old opacity"><span>51 900</span> ₽</p>
+                        </div>
+                        <div class="red-cart-button-product pointer none">
+                           <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="32" cy="32" r="32" fill="#FF5151" />
+                              <path
+                                 d="M21.315 27.8518C21.5544 25.6361 23.3651 24 25.4743 24H39.5257C41.6349 24 43.4456 25.6361 43.685 27.8518L44.9654 39.7045C45.3314 43.0932 42.7553 46 39.5177 46H25.4823C22.2447 46 19.6686 43.0932 20.0346 39.7045L21.315 27.8518Z"
+                                 fill="white"
+                                 stroke="white"
+                                 stroke-width="2"
+                              />
+                              <path
+                                 fill-rule="evenodd"
+                                 clip-rule="evenodd"
+                                 d="M26 20.4681C26 16.8959 28.9101 14 32.5 14C36.0899 14 39 16.8959 39 20.4681V30H36.9474V20.4681C36.9474 18.0239 34.9562 16.0426 32.5 16.0426C30.0438 16.0426 28.0526 18.0239 28.0526 20.4681V30H26V20.4681Z"
+                                 fill="white"
+                              />
+                           </svg>
                         </div>
                      </div>
                   </div>

@@ -1148,6 +1148,9 @@
    .type-of-thing-home {
       font-size: 14px;
    }
+   .line-between-arrows {
+      display: block;
+   }
 }
 
 @media (max-width: 400px) {
