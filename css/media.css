@@ -855,6 +855,15 @@
    }
    .basket-sale {
    }
+   .accordion__content {
+      width: 100%;
+   }
+   .bonus-info-subt {
+      font-size: 16px;
+   }
+   .bonus-info-disc {
+      font-size: 14px;
+   }
 }
 
 @media (max-width: 600px) {
@@ -868,6 +877,9 @@
    .subtitle-home,
    .cabinet-tabs {
       font-size: 16px;
+   }
+   .subtitle-collection {
+      font-size: 14px;
    }
    .h2-section {
       font-size: 30px;
@@ -1150,6 +1162,16 @@
    }
    .line-between-arrows {
       display: block;
+   }
+   .logo-icon img {
+      width: 170px;
+   }
+   .accordion__header {
+      background-image: url(../assets/icon/underline400.svg);
+      padding: 10px 0px 25px 0;
+   }
+   .right-p-p-tg-container {
+      margin-left: 0;
    }
 }
 
