@@ -1156,7 +1156,7 @@ footer {
 .footer-u-list > li a:visited {
    color: #6c6050;
 }
-.footer-u-list > li:hover a {
+.footer-u-list > li a:hover {
    color: #ff5151;
 }
 
@@ -2050,6 +2050,7 @@ div.cs-last {
    border-radius: 24px;
    width: max-content;
    flex-shrink: 0;
+   cursor: pointer;
 }
 .dscription-p-p_tab.active {
    background-color: #fff;
