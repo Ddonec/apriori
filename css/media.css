@@ -855,6 +855,9 @@
    }
    .basket-sale {
    }
+   .accordion__content {
+      width: 100%;
+   }
 }
 
 @media (max-width: 600px) {
@@ -1156,6 +1159,10 @@
    }
    .logo-icon img {
       width: 170px;
+   }
+   .accordion__header {
+      background-image: url(../assets/icon/underline400.svg);
+      padding: 10px 0px 25px 0;
    }
 }
 
