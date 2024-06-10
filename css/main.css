@@ -1124,6 +1124,13 @@ footer {
 .footer-u-list > li {
    margin-top: 20px;
 }
+.footer-u-list > li:hover a {
+   color: #ff5151;
+}
+.footer-u-list > li a:visited {
+   color: #6c6050;
+}
+
 .footer_rignt__ul-box {
    width: 35%;
 }
