@@ -1145,6 +1145,9 @@
    .social-webs-flex {
       gap: 12px;
    }
+   .type-of-thing-home {
+      font-size: 14px;
+   }
 }
 
 @media (max-width: 400px) {
