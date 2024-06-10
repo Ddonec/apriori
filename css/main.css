@@ -966,6 +966,7 @@ h1 {
 
 .viewed-product_img {
    height: 251px;
+   border-radius: 20px;
 }
 .viewed-product_name {
    font-family: "TT Ramillas Trl", sans-serif;
