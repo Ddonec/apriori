@@ -593,6 +593,12 @@ h1 {
 .viewed-product:hover .viewed-product_price-sub {
    display: none;
 }
+.red-cart-button-product {
+   position: absolute;
+   right: 24px;
+   top: 50%;
+   transform: translateY(-50%);
+}
 .product-card-image {
    display: flex;
    flex-direction: column;
@@ -2109,10 +2115,17 @@ div.cs-last {
 .more-products-interior_product-box {
 }
 .more-products-interior_product {
+   position: relative;
    display: flex;
    align-items: center;
    padding: 16px;
    border-radius: 16px;
+}
+.more-products-interior_product:hover .interior_product-box__price {
+   display: none;
+}
+.more-products-interior_product:hover .red-cart-button-product {
+   display: block;
 }
 .interior_product-box__img {
    margin-right: 24px;
@@ -2122,7 +2135,7 @@ div.cs-last {
    width: 94px;
    height: 94px;
 }
-.more-products-interior_product.in-cart {
+.more-products-interior_product:hover {
    background: #fff888;
 }
 .product-box__text-box___title {
