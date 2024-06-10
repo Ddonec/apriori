@@ -1066,7 +1066,8 @@ h1 {
    align-items: center;
    justify-content: center;
 }
-.viewed-product_discont-value span {
+.viewed-product_discont-value span,
+.basket-sale span {
    font-weight: 300;
 }
 .product_discont-value {
