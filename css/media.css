@@ -1164,6 +1164,9 @@
       background-image: url(../assets/icon/underline400.svg);
       padding: 10px 0px 25px 0;
    }
+   .right-p-p-tg-container {
+      margin-left: 0;
+   }
 }
 
 @media (max-width: 400px) {

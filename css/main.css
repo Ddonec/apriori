@@ -2256,7 +2256,7 @@ div.cs-last {
    gap: 24px;
 }
 .cabinet-zone {
-   margin-top: 48px;
+   margin-top: 24px;
    display: flex;
    flex-wrap: wrap;
    gap: 24px;
@@ -2477,7 +2477,7 @@ div.cs-last {
 .cabinet-block {
    display: flex;
    flex-direction: column;
-   gap: 24px;
+   gap: 10px;
    margin-top: 24px;
 }
 .summ-title {
@@ -3087,6 +3087,17 @@ div.cs-last {
 .pag-btn-s-view {
    display: flex;
 }
+/* Стили для устройств с сенсорными экранами */
+@media (pointer: coarse) {
+   .add-adress-box .basket-btn_minus {
+      background: #ff5151;
+   }
+   .add-adress-box .basket-btn_minus::after,
+   .add-adress-box .basket-btn_minus::before {
+      background: #fff;
+   }
+}
+
 /*  */
 
 /* */
