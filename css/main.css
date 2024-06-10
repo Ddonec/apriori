@@ -824,6 +824,9 @@ h1 {
    display: inline-block;
    vertical-align: middle;
 }
+.img-search-order_btn:hover path {
+   stroke: black;
+}
 
 /* .custom-checkbox:hover {
    background-color: #f8f3ed;
