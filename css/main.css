@@ -1130,11 +1130,11 @@ footer {
 .footer-u-list > li {
    margin-top: 20px;
 }
-.footer-u-list > li:hover a {
-   color: #ff5151;
-}
 .footer-u-list > li a:visited {
    color: #6c6050;
+}
+.footer-u-list > li:hover a {
+   color: #ff5151;
 }
 
 .footer_rignt__ul-box {
@@ -2940,6 +2940,12 @@ div.cs-last {
 .nav-list a {
    color: unset;
    text-decoration: none;
+}
+.nav-list a:visited {
+   color: #6c6050;
+}
+.nav-list a:hover {
+   color: #ff5151;
 }
 .nav-list_social-list {
    display: flex;
