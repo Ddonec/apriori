@@ -324,7 +324,23 @@ h1 {
 .svg-like-blk:hover circle {
    stroke: #000;
 }
-.see-collection-hover {
+
+.header-icon-hover:hover circle {
+   stroke: #fff888;
+   opacity: 1;
+   fill: #fff888;
+}
+.svg-burger-icon:hover circle {
+   stroke: #fff888;
+   opacity: 1;
+   fill: #fff888;
+}
+.svg-burger-icon:hover .head-header-icon {
+   stroke: #1d1d1d;
+}
+.header-icon-hover:hover path,
+.header-icon-hover:hover .head-header-icon {
+   stroke: #1d1d1d;
 }
 .panel_magic__show-collection:hover .see-collection-hover {
    fill: #fff888;
