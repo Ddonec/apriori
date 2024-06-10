@@ -1151,6 +1151,9 @@
    .line-between-arrows {
       display: block;
    }
+   .logo-icon img {
+      width: 170px;
+   }
 }
 
 @media (max-width: 400px) {
