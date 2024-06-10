@@ -324,7 +324,23 @@ h1 {
 .svg-like-blk:hover circle {
    stroke: #000;
 }
-.see-collection-hover {
+
+.header-icon-hover:hover circle {
+   stroke: #fff888;
+   opacity: 1;
+   fill: #fff888;
+}
+.svg-burger-icon:hover circle {
+   stroke: #fff888;
+   opacity: 1;
+   fill: #fff888;
+}
+.svg-burger-icon:hover .head-header-icon {
+   stroke: #1d1d1d;
+}
+.header-icon-hover:hover path,
+.header-icon-hover:hover .head-header-icon {
+   stroke: #1d1d1d;
 }
 .panel_magic__show-collection:hover .see-collection-hover {
    fill: #fff888;
@@ -377,6 +393,12 @@ h1 {
    line-height: 1.2;
    letter-spacing: 0.02em;
    color: #fff;
+
+   cursor: pointer;
+}
+.red-circle:hover {
+   color: #000;
+   background: #fff;
 }
 
 .panel-container {
@@ -966,6 +988,7 @@ h1 {
 
 .viewed-product_img {
    height: 251px;
+   border-radius: 20px;
 }
 .viewed-product_name {
    font-family: "TT Ramillas Trl", sans-serif;
@@ -1107,6 +1130,13 @@ footer {
 .footer-u-list > li {
    margin-top: 20px;
 }
+.footer-u-list > li a:visited {
+   color: #6c6050;
+}
+.footer-u-list > li:hover a {
+   color: #ff5151;
+}
+
 .footer_rignt__ul-box {
    width: 35%;
 }
@@ -2911,6 +2941,12 @@ div.cs-last {
    color: unset;
    text-decoration: none;
 }
+.nav-list a:visited {
+   color: #6c6050;
+}
+.nav-list a:hover {
+   color: #ff5151;
+}
 .nav-list_social-list {
    display: flex;
    gap: 32px;
@@ -2981,4 +3017,7 @@ div.cs-last {
 }
 .link-normal-text {
    text-decoration: none;
+}
+.shrink {
+   flex-shrink: 0;
 }
