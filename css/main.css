@@ -2072,6 +2072,85 @@ div.cs-last {
    align-items: center;
    justify-content: center;
 }
+
+/* // */
+
+/* Date picker */
+
+.date-input {
+   width: 100px;
+   height: 100px;
+   padding: 0;
+   box-sizing: border-box;
+   font-size: 16px;
+   text-align: end;
+   border: 2px solid #ccc;
+   border-radius: 8px;
+   cursor: pointer;
+}
+.date-input:hover {
+}
+.date-input.selected {
+   text-align: left;
+}
+.calendar {
+   display: none;
+   position: absolute;
+   background-color: white;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   padding: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   z-index: 1000;
+}
+.calendar table {
+   width: 100%;
+}
+.calendar th,
+.calendar td {
+   text-align: center;
+   padding: 5px;
+   cursor: pointer;
+}
+.calendar th {
+   background-color: #f0f0f0;
+}
+.calendar td:hover {
+   background-color: black;
+   color: white;
+}
+.calendar td.selected {
+   background-color: coral;
+   color: white;
+}
+.calendar-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 10px;
+}
+.calendar-header div {
+   display: flex;
+   align-items: center;
+}
+.calendar-header .year-control {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.calendar-header span {
+   margin: 0 10px;
+   font-size: 20px;
+}
+.arrow {
+   cursor: pointer;
+   user-select: none;
+}
+.absolute-placeholder {
+   text-align: end;
+}
+
+/* // */
 .dscription-p-p_tabs {
    font-family: "Inter", sans-serif;
    font-weight: 400;

@@ -387,8 +387,152 @@
                   </div>
 
                   <div class="orders-period">
-                     <input type="date" id="order-period-start" />
-                     <input type="date" id="order-period-end" />
+                     <input type="text" id="order-period-start" class="date-input" placeholder="Начало периода" readonly />
+                     <div id="calendar-start" class="calendar"></div>
+
+                     <input type="text" id="order-period-end" class="date-input" placeholder="Конец периода" readonly />
+                     <div id="calendar-end" class="calendar"></div>
+
+                     <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                           const dateInputs = document.querySelectorAll(".date-input");
+                           const calendars = document.querySelectorAll(".calendar");
+                           const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+                           dateInputs.forEach((input, index) => {
+                              input.addEventListener("click", function () {
+                                 const calendar = calendars[index];
+                                 calendar.style.display = "block";
+                                 const rect = input.getBoundingClientRect();
+                                 calendar.style.top = rect.bottom + window.scrollY + "px";
+                                 calendar.style.left = rect.left + window.scrollX + "px";
+                              });
+
+                              input.addEventListener("blur", function () {
+                                 setTimeout(() => (calendars[index].style.display = "none"), 200);
+                              });
+                           });
+
+                           calendars.forEach((calendar) => {
+                              calendar.addEventListener("mousedown", function (event) {
+                                 event.preventDefault();
+                              });
+                           });
+
+                           function createCalendar(calendar) {
+                              const now = new Date();
+                              let month = now.getMonth();
+                              let year = now.getFullYear();
+
+                              const header = document.createElement("div");
+                              header.className = "calendar-header";
+
+                              const yearControl = document.createElement("div");
+                              yearControl.className = "year-control";
+
+                              const yearUp = document.createElement("span");
+                              yearUp.className = "arrow";
+                              yearUp.textContent = "▲";
+                              const yearDown = document.createElement("span");
+                              yearDown.className = "arrow";
+                              yearDown.textContent = "▼";
+                              const yearDisplay = document.createElement("span");
+                              yearDisplay.textContent = year;
+
+                              const monthControl = document.createElement("div");
+                              const monthPrev = document.createElement("img");
+                              monthPrev.className = "arrow";
+                              monthPrev.src = "assets/icon/arrow-corner-right.svg";
+                              monthPrev.style.transform = "rotate(180deg)";
+                              const monthNext = document.createElement("img");
+                              monthNext.className = "arrow";
+                              monthNext.src = "assets/icon/arrow-corner-right.svg";
+                              const monthDisplay = document.createElement("span");
+                              monthDisplay.textContent = monthNames[month];
+
+                              yearControl.appendChild(yearUp);
+                              yearControl.appendChild(yearDown);
+                              monthControl.appendChild(monthPrev);
+                              monthControl.appendChild(monthNext);
+                              header.appendChild(yearDisplay);
+                              header.appendChild(monthDisplay);
+                              header.appendChild(yearControl);
+                              header.appendChild(monthControl);
+                              calendar.appendChild(header);
+
+                              function renderCalendar() {
+                                 calendar.querySelectorAll("table").forEach((table) => table.remove());
+
+                                 const daysInMonth = new Date(year, month + 1, 0).getDate();
+                                 let firstDay = new Date(year, month, 1).getDay();
+                                 if (firstDay === 0) firstDay = 7;
+
+                                 const table = document.createElement("table");
+                                 const tableHeader = table.createTHead();
+                                 const headerRow = tableHeader.insertRow();
+                                 ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"].forEach((day) => {
+                                    const cell = headerRow.insertCell();
+                                    cell.textContent = day;
+                                 });
+
+                                 const body = table.createTBody();
+                                 let row = body.insertRow();
+                                 for (let i = 1; i < firstDay; i++) {
+                                    row.insertCell();
+                                 }
+                                 for (let day = 1; day <= daysInMonth; day++) {
+                                    if (row.cells.length === 7) row = body.insertRow();
+                                    const cell = row.insertCell();
+                                    cell.textContent = day;
+                                    cell.addEventListener("click", function () {
+                                       const input = calendar.previousElementSibling;
+                                       input.value = `${String(day).padStart(2, "0")}:${String(month + 1).padStart(2, "0")}:${year}`;
+                                       input.classList.add("selected");
+                                       calendar.querySelectorAll("td").forEach((td) => td.classList.remove("selected"));
+                                       cell.classList.add("selected");
+                                       calendar.style.display = "none";
+                                    });
+                                 }
+                                 calendar.appendChild(table);
+                                 yearDisplay.textContent = year;
+                                 monthDisplay.textContent = monthNames[month];
+                              }
+
+                              yearUp.addEventListener("click", function () {
+                                 year++;
+                                 renderCalendar();
+                              });
+
+                              yearDown.addEventListener("click", function () {
+                                 year--;
+                                 renderCalendar();
+                              });
+
+                              monthPrev.addEventListener("click", function () {
+                                 month--;
+                                 if (month < 0) {
+                                    month = 11;
+                                    year--;
+                                 }
+                                 renderCalendar();
+                              });
+
+                              monthNext.addEventListener("click", function () {
+                                 month++;
+                                 if (month > 11) {
+                                    month = 0;
+                                    year++;
+                                 }
+                                 renderCalendar();
+                              });
+
+                              renderCalendar();
+                           }
+
+                           calendars.forEach(createCalendar);
+                        });
+                     </script>
+                     <img src="assets/icon/arrow-corner-right.svg" alt="" />
                      <div class="img-search-order_btn pointer">
                         <svg class="img-search-order" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <circle cx="32" cy="32" r="32" fill="#FF5151" />
@@ -401,6 +545,7 @@
                         </svg>
                      </div>
                   </div>
+
                   <ul class="order-list">
                      <li class="order-list-item-1">Заказы</li>
                      <li class="order-list-item-2">Кол-во</li>
