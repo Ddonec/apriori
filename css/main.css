@@ -782,6 +782,9 @@ h1 {
 .review_stars {
    display: flex;
    gap: 9px;
+   width: -webkit-fill-available;
+   align-items: center;
+   justify-content: end;
 }
 .review_date {
    font-family: "Inter", sans-serif;
