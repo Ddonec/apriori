@@ -2096,31 +2096,38 @@ div.cs-last {
 .calendar {
    display: none;
    position: absolute;
-   background-color: white;
+   background-color: #f8f3ed;
    border: 1px solid #ccc;
    border-radius: 8px;
-   padding: 10px;
+   padding: 24px 16px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    z-index: 1000;
 }
 .calendar table {
    width: 100%;
+   border-collapse: separate;
+   border-spacing: 7px;
 }
 .calendar th,
 .calendar td {
    text-align: center;
-   padding: 5px;
    cursor: pointer;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+}
+.date-cell {
+   padding: 12px 0;
 }
 .calendar th {
    background-color: #f0f0f0;
 }
-.calendar td:hover {
+.calendar .date-cell:hover {
    background-color: black;
    color: white;
 }
 .calendar td.selected {
-   background-color: coral;
+   background-color: #ff5151;
    color: white;
 }
 .calendar-header {
@@ -2138,9 +2145,26 @@ div.cs-last {
    align-items: center;
    flex-direction: column;
 }
+.m-l-auto {
+   margin-left: auto;
+}
 .calendar-header span {
    margin: 0 10px;
    font-size: 20px;
+   font-family: "TT Ramillas Trl", sans-serif;
+   font-weight: 300;
+   font-size: 20px;
+   line-height: 1.1;
+   color: #1d1d1d;
+}
+.day-gray-calendar {
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 2;
+   text-transform: uppercase;
+   text-align: center;
+   color: rgba(29, 29, 29, 0.24);
 }
 .arrow {
    cursor: pointer;

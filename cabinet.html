@@ -397,7 +397,7 @@
                         document.addEventListener("DOMContentLoaded", function () {
                            const dateInputs = document.querySelectorAll(".date-input");
                            const calendars = document.querySelectorAll(".calendar");
-                           const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                           const monthNames = ["ЯНВАРЬ", "ФЕВРАЛЬ", "МАРТ", "АПРЕЛЬ", "МАЙ", "ИЮНЬ", "ИЮЛЬ", "АВГУСТ", "СЕНТЯБРЬ", "ОКТЯБРЬ", "НОЯБРЬ", "ДЕКАБРЬ"];
 
                            dateInputs.forEach((input, index) => {
                               input.addEventListener("click", function () {
@@ -439,10 +439,9 @@
                               yearDown.className = "arrow";
                               yearDown.src = "assets/icon/arrow-corner-right.svg";
                               yearDown.style.transform = "rotate(90deg)";
-                              const yearDisplay = document.createElement("span");
-                              yearDisplay.textContent = year;
-
+                              yearDown.style.height = "13px";
                               const monthControl = document.createElement("div");
+                              monthControl.classList.add("m-l-auto");
                               const monthPrev = document.createElement("img");
                               monthPrev.className = "arrow";
                               monthPrev.src = "assets/icon/arrow-corner-right.svg";
@@ -451,13 +450,12 @@
                               monthNext.className = "arrow";
                               monthNext.src = "assets/icon/arrow-corner-right.svg";
                               const monthDisplay = document.createElement("span");
-                              monthDisplay.textContent = monthNames[month];
+                              monthDisplay.textContent = `${monthNames[month]} ${year}`;
 
                               yearControl.appendChild(yearUp);
                               yearControl.appendChild(yearDown);
                               monthControl.appendChild(monthPrev);
                               monthControl.appendChild(monthNext);
-                              header.appendChild(yearDisplay);
                               header.appendChild(monthDisplay);
                               header.appendChild(yearControl);
                               header.appendChild(monthControl);
@@ -473,9 +471,10 @@
                                  const table = document.createElement("table");
                                  const tableHeader = table.createTHead();
                                  const headerRow = tableHeader.insertRow();
-                                 ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"].forEach((day) => {
+                                 ["ПН", "ВТ", "СР", "ЧТ", "ПТ", "СБ", "ВС"].forEach((day) => {
                                     const cell = headerRow.insertCell();
                                     cell.textContent = day;
+                                    cell.classList.add("day-gray-calendar")
                                  });
 
                                  const body = table.createTBody();
@@ -487,6 +486,7 @@
                                     if (row.cells.length === 7) row = body.insertRow();
                                     const cell = row.insertCell();
                                     cell.textContent = day;
+                                    cell.classList.add("date-cell")
                                     cell.addEventListener("click", function () {
                                        const input = calendar.previousElementSibling;
                                        input.value = `${String(day).padStart(2, "0")}:${String(month + 1).padStart(2, "0")}:${year}`;
@@ -497,8 +497,7 @@
                                     });
                                  }
                                  calendar.appendChild(table);
-                                 yearDisplay.textContent = year;
-                                 monthDisplay.textContent = monthNames[month];
+                                 monthDisplay.textContent = `${monthNames[month]} ${year}`;
                               }
 
                               yearUp.addEventListener("click", function () {
